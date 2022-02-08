@@ -125,11 +125,9 @@
 #ascrail2001 {
   margin-top: 40px;
   height: calc(380px - 40px) !important;
-  margin-left: 15px;
+  // margin-left: 15px;
   overflow: hidden;
-  @include media($xl) {
-    margin-left: 5px;
-  }
+  //
 }
 
 .timer {
