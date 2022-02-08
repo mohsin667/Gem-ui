@@ -148,6 +148,7 @@
     flex-flow: column;
     text-align: center;
     margin: 0 12px;
+    width: calc(100% / 3 - 24px);
     .time-col {
       background-color: #0c0e11;
       padding: 10px 15px;
@@ -156,17 +157,10 @@
       font-family: "Roboto Mono", monospace;
       font-size: 24px;
       margin-bottom: 10px;
-      width: 80px;
       @include media($lg) {
-        font-size: 28px;
-        width: 65px;
       }
       @include media($xl) {
         font-size: 40px;
-        width: 100px;
-      }
-      @include media($xxl) {
-        width: 120px;
       }
     }
     span {

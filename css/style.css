@@ -378,7 +378,8 @@ nav {
     justify-content: center;
     flex-flow: column;
     text-align: center;
-    margin: 0 12px; }
+    margin: 0 12px;
+    width: calc(100% / 3 - 24px); }
     .timer .log .time-col {
       background-color: #0c0e11;
       padding: 10px 15px;
@@ -386,19 +387,10 @@ nav {
       border-radius: 4px;
       font-family: "Roboto Mono", monospace;
       font-size: 24px;
-      margin-bottom: 10px;
-      width: 80px; }
-      @media screen and (min-width: 992px) {
-        .timer .log .time-col {
-          font-size: 28px;
-          width: 65px; } }
+      margin-bottom: 10px; }
       @media screen and (min-width: 1200px) {
         .timer .log .time-col {
-          font-size: 40px;
-          width: 100px; } }
-      @media screen and (min-width: 1400px) {
-        .timer .log .time-col {
-          width: 120px; } }
+          font-size: 40px; } }
     .timer .log span {
       font-size: 14px; }
   .timer .btn-box {
