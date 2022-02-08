@@ -3,7 +3,7 @@ body {
   font-size: 14px;
   font-family: "Oxanium", cursive;
   @include media($lg) {
-    font-size: 18px;
+    font-size: 16px;
   }
   .bg {
     position: absolute;
@@ -55,24 +55,22 @@ p {
 }
 
 .gloabal-heading {
-  font-size: 24px;
+  font-size: 22px;
   @include media($xl) {
-    font-size: 40px;
+    font-size: 38px;
   }
   span {
     color: $th-blue;
   }
   &.medium {
-    font-size: 18px;
+    margin-bottom: 0;
+    font-size: 24px;
     @include media($lg) {
-      font-size: 32px;
+      font-size: 28px;
     }
   }
   &.small {
-    font-size: 16px;
-    @include media($lg) {
-      font-size: 20px;
-    }
+    font-size: 18px;
   }
 }
 
