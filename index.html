@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;700&family=Source+Sans+Pro:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/jquery.nicescroll.min.js"></script>
+  <title>Figma to Html</title>
+</head>
+
+<body class="th-dark-blue">
+  <img class="bg tdb" src="./images/background.png" alt="background" />
+  <main>
+    <!-- Navigation -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <nav class="d-flex justify-content-between align-items-center">
+            <a href="/"><img class="logo" src="./images/logo.png" alt="logo" /></a>
+            <div class="profile">
+              <a href="/" class="d-flex justify-content-between align-items-center profile-block">
+                <img class="me-2 profile-img" src="./images/placeholder.png" alt="placeholder" />
+                <span>Liam Williams</span>
+                <img class="caret ms-2" src="./images/caret.png" alt="placeholder" />
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation -->
+
+    <!-- Weekly Chainbound -->
+    <div class="container-fluid">
+      <div class="row align-items-start">
+        <div class="col-12 col-lg-8">
+          <div class="left-col">
+            <div class="weekly-round d-flex">
+              <div class="round ">
+                <h3>Round</h3>
+                <h2>3</h2>
+              </div>
+              <div class="round-details">
+                <h2 class="gloabal-heading">Weekly Chainbound 3 Feb- <span>Swiss</span></h2>
+                <p>Round Progress 0/2 Scores</p>
+                <div class="tags">View Round &nbsp;<span>1</span> <span>2</span></div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center btn-box flex-wrap">
+              <a href="/" class="btn btn-active"><span><img src="./images/pairing.png" alt="leader"></span> Advertise
+                Pairing</a>
+              <a href="/" class="btn"><span><img src="./images/leader.png" alt="leader"></span>Leader Board</a>
+              <a href="/" class="inline-btn"><img src="./images/video-square.png" alt="video button">Match Clip</a>
+            </div>
+            <p class="danger">* Round cannont be started until pairing are advertised.</p>
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 right-col">
+          <h2 class="gloabal-heading small"><span>Tournament</span> Stats</h2>
+          <ul class="nice">
+            <li class="d-flex justify-content-between">
+              <p><img src="./images/multiplayer.png" alt="multi player" />Player Registered</p> <span>50</span>
+            </li>
+            <li class="d-flex justify-content-between">
+              <p><img src="./images/profile-tick.png" alt="multi player" />Player Arrived</p> <span>40</span>
+            </li>
+            <li class="d-flex justify-content-between">
+              <p><img src="./images/profile-delete.png" alt="multi player" />Player Dropped</p> <span>10</span>
+            </li>
+            <li class="d-flex justify-content-between">
+              <p><img src="./images/calendar.png" alt="multi player" />Event Type</p> <span>Chainbound</span>
+            </li>
+            <li class="d-flex justify-content-between">
+              <p><img src="./images/chart.png" alt="multi player" />Round Size</p> <span>Single</span>
+            </li>
+
+            <li class="d-flex justify-content-between">
+              <p><img src="./images/chart.png" alt="multi player" />Round Size</p> <span>Single</span>
+            </li>
+
+            <li class="d-flex justify-content-between">
+              <p><img src="./images/chart.png" alt="multi player" />Round Size</p> <span>Single</span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Weekly Chainbound -->
+
+    <div class="listing-table">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h2 class="gloabal-heading medium "><span>Player</span> Listings</h2>
+              <a href="/" class="btn btn-active mini">Add/edit Players</a>
+            </div>
+
+            <div class="nice">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Table</th>
+                    <th>First Player</th>
+                    <th>Second Player</th>
+                    <th>&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>
+                      <div class="table-data d-flex align-items-center">
+                        <img src="./images/carl.png" alt="player">
+                        <h3>Carl E.<span>Conard</span></h3>
+                        <div class="running-status">2-0</div>
+                        <div class="tags">
+                          <span>Won</span>
+                          <span>Drop</span>
+                          <span>DQ</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-data d-flex align-items-center">
+                        <img src="./images/carl.png" alt="player">
+                        <h3>Carl E.<span>Conard</span></h3>
+                        <div class="running-status">2-0</div>
+                        <div class="tags">
+                          <span>Won</span>
+                          <span>Drop</span>
+                          <span>DQ</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="/" class="btn mini">2X loss</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>
+                      <div class="table-data d-flex align-items-center">
+                        <img src="./images/carl.png" alt="player">
+                        <h3>Carl E.<span>Conard</span></h3>
+                        <div class="running-status">2-0</div>
+                        <div class="tags">
+                          <span>Won</span>
+                          <span>Drop</span>
+                          <span>DQ</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-data d-flex align-items-center">
+                        <img src="./images/carl.png" alt="player">
+                        <h3>Carl E.<span>Conard</span></h3>
+                        <div class="running-status">2-0</div>
+                        <div class="tags">
+                          <span>Won</span>
+                          <span>Drop</span>
+                          <span>DQ</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="/" class="btn mini">2X loss</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>
+                      <div class="table-data d-flex align-items-center">
+                        <img src="./images/carl.png" alt="player">
+                        <h3>Carl E.<span>Conard</span></h3>
+                        <div class="running-status">2-0</div>
+                        <div class="tags">
+                          <span>Won</span>
+                          <span>Drop</span>
+                          <span>DQ</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-data d-flex align-items-center">
+                        <img src="./images/carl.png" alt="player">
+                        <h3>Carl E.<span>Conard</span></h3>
+                        <div class="running-status">2-0</div>
+                        <div class="tags">
+                          <span>Won</span>
+                          <span>Drop</span>
+                          <span>DQ</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="/" class="btn mini">2X loss</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>
+                      <div class="table-data d-flex align-items-center">
+                        <img src="./images/carl.png" alt="player">
+                        <h3>Carl E.<span>Conard</span></h3>
+                        <div class="running-status">2-0</div>
+                        <div class="tags">
+                          <span>Won</span>
+                          <span>Drop</span>
+                          <span>DQ</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-data d-flex align-items-center">
+                        <img src="./images/carl.png" alt="player">
+                        <h3>Carl E.<span>Conard</span></h3>
+                        <div class="running-status">2-0</div>
+                        <div class="tags">
+                          <span>Won</span>
+                          <span>Drop</span>
+                          <span>DQ</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="/" class="btn mini">2X loss</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>
+                      <div class="table-data d-flex align-items-center">
+                        <img src="./images/carl.png" alt="player">
+                        <h3>Carl E.<span>Conard</span></h3>
+                        <div class="running-status">2-0</div>
+                        <div class="tags">
+                          <span>Won</span>
+                          <span>Drop</span>
+                          <span>DQ</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-data d-flex align-items-center">
+                        <img src="./images/carl.png" alt="player">
+                        <h3>Carl E.<span>Conard</span></h3>
+                        <div class="running-status">2-0</div>
+                        <div class="tags">
+                          <span>Won</span>
+                          <span>Drop</span>
+                          <span>DQ</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="/" class="btn mini">2X loss</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>
+                      <div class="table-data d-flex align-items-center">
+                        <img src="./images/carl.png" alt="player">
+                        <h3>Carl E.<span>Conard</span></h3>
+                        <div class="running-status">2-0</div>
+                        <div class="tags">
+                          <span>Won</span>
+                          <span>Drop</span>
+                          <span>DQ</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="table-data d-flex align-items-center">
+                        <img src="./images/carl.png" alt="player">
+                        <h3>Carl E.<span>Conard</span></h3>
+                        <div class="running-status">2-0</div>
+                        <div class="tags">
+                          <span>Won</span>
+                          <span>Drop</span>
+                          <span>DQ</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="/" class="btn mini">2X loss</a>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 listing-table-right">
+            <h2 class="gloabal-heading small">
+              <span>Show Full </span>Screen
+            </h2>
+            <div class="timer">
+              <div class="time-box d-flex align-items-center">
+                <div class="log">
+                  <div class="time-col">00</div>
+                  <span>Hours</span>
+                </div>
+                <div class="log">
+                  <div class="time-col">00</div>
+                  <span>Minutes</span>
+                </div>
+                <div class="log">
+                  <div class="time-col">00</div>
+                  <span>Seconds</span>
+                </div>
+              </div>
+              <a href="/" class="btn btn-active"><span><img src="./images/play.png" alt="play" /> Start</span></a>
+              <div class="d-flex align-items-center btn-box flex-wrap">
+                <a href="/" class="btn">Save</a>
+                <a href="/" class="btn">Load</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
