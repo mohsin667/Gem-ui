@@ -38,7 +38,8 @@ p {
 
 .container-fluid {
   padding-right: var(--bs-gutter-x, 15px);
-  padding-left: var(--bs-gutter-x, 15px); }
+  padding-left: var(--bs-gutter-x, 15px);
+  max-width: 1440px; }
   @media screen and (min-width: 992px) {
     .container-fluid {
       padding-right: var(--bs-gutter-x, 30px);
@@ -51,6 +52,9 @@ p {
 .gloabal-heading {
   font-size: 22px; }
   @media screen and (min-width: 1200px) {
+    .gloabal-heading {
+      font-size: 32px; } }
+  @media screen and (min-width: 1400px) {
     .gloabal-heading {
       font-size: 38px; } }
   .gloabal-heading span {
@@ -180,7 +184,10 @@ nav {
     height: calc(100% - 30px);
     bottom: 0;
     left: -4px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #08090e 70%); }
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #08090e 70%);
+    background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #08090e 70%);
+    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #08090e 70%);
+    background: -webkit-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #08090e 70%); }
   .round h3 {
     position: relative;
     font-size: 24px; }
