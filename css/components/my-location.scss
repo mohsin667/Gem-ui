@@ -1,0 +1,80 @@
+.heading {
+  @include border;
+  padding-bottom: 20px;
+  .btn.mini {
+    padding: 8px 12px;
+    line-height: 1.7;
+  }
+}
+
+.cards-wrapper {
+  .game-card-wrapper {
+    .btn-row {
+      width: 100%;
+    }
+    @include media($lg) {
+      padding-right: 10px;
+      margin-left: -10px;
+    }
+    .game-card {
+      border-radius: 8px;
+      background-color: $light-dark;
+      flex-flow: wrap;
+      margin-bottom: 20px;
+      @include media($lg) {
+        margin: 0 10px 20px;
+      }
+      p {
+        max-width: 300px;
+      }
+      .game-card-details {
+        flex-flow: wrap;
+        justify-content: flex-start;
+      }
+      img {
+        display: block;
+        max-height: 100px;
+        margin: 0 0 20px;
+        @include media($lg) {
+          max-height: 100%;
+          margin: 0;
+        }
+      }
+    }
+    &.card-count-2 {
+      .game-card {
+        @include media($lg) {
+          width: calc(100% / 2 - 20px);
+        }
+        img {
+          @include media($lg) {
+            margin-right: 20px;
+          }
+        }
+        h2,
+        p {
+          @include media($lg) {
+            margin-bottom: 0;
+          }
+        }
+        p {
+          max-width: 300px;
+        }
+      }
+    }
+    &.card-count-3 {
+      .game-card {
+        flex-flow: wrap;
+        @include media($lg) {
+          width: calc(100% / 3 - 20px);
+        }
+        img {
+          margin: 0 0 20px;
+          @include media($lg) {
+            margin: 0 auto 20px;
+          }
+        }
+      }
+    }
+  }
+}

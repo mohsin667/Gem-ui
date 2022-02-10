@@ -1,10 +1,8 @@
 body {
   position: relative;
   font-size: 14px;
-  font-family: "Oxanium", cursive;
-  @include media($lg) {
-    font-size: 16px;
-  }
+  font-family: "Oxanium";
+
   .bg {
     position: absolute;
     left: 0;
@@ -44,14 +42,15 @@ p {
 .container-fluid {
   padding-right: var(--bs-gutter-x, 15px);
   padding-left: var(--bs-gutter-x, 15px);
-  max-width: 1440px;
   @include media($lg) {
     padding-right: var(--bs-gutter-x, 30px);
     padding-left: var(--bs-gutter-x, 30px);
   }
-  @include media($xxl) {
-    padding-right: var(--bs-gutter-x, 40px);
-    padding-left: var(--bs-gutter-x, 40px);
+
+  &.full-width {
+    max-width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
   }
 }
 
@@ -82,26 +81,47 @@ ul {
   margin: 0;
   padding: 0;
 }
+li {
+  list-style: none;
+}
 
 .btn {
-  border-radius: 2px;
+  border-radius: 5px;
   background-color: transparent;
   border: 1px solid $th-blue;
   color: $th-blue;
-  display: inline-flex;
-  align-items: center;
   padding: 10px;
   font-size: 14px;
+  line-height: 1.4;
   @include media($xl) {
     padding: 10px 20px;
     font-size: 1rem;
+  }
+  span {
+    display: inline-block;
   }
   &:hover,
   &:focus {
     color: $th-blue;
   }
-  span {
-    display: inline-block;
+  &.big {
+    display: block;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  &.mini {
+    height: auto;
+    min-height: auto;
+    font-size: 12px;
+    padding: 8px 15px;
+    @include media($xxxl) {
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+  }
+  &.transparent {
+    background-color: rgba(52, 87, 209, 0.3);
   }
 }
 
@@ -112,6 +132,16 @@ ul {
   &:focus {
     color: #fff;
   }
+}
+
+.bold {
+  font-weight: 700;
+}
+.medium {
+  font-weight: 500;
+}
+.regular {
+  font-weight: 400;
 }
 
 .btn-box {
@@ -160,4 +190,46 @@ ul {
       border: none !important;
     }
   }
+}
+
+.form-control {
+  background-color: transparent;
+  border-color: #e8e8e8;
+  font-size: 14px;
+  padding: 0.75rem;
+  &:focus {
+    background-color: transparent;
+  }
+}
+
+.th-dark-blue {
+  .form-check-input {
+    border: 1px solid #242424;
+    background-color: transparent;
+  }
+  .form-control {
+    background-color: transparent;
+    border-color: #242424;
+    color: rgba(245, 245, 245, 0.65);
+    &:focus {
+      color: rgba(245, 245, 245, 0.65);
+      background-color: transparent;
+      box-shadow: 0 0 0 0.25rem rgb(52, 87, 209);
+    }
+  }
+}
+
+.link {
+  color: #3457d1;
+  &:hover {
+    color: #3457d1;
+  }
+}
+
+.light-dark {
+  background-color: #171a1e;
+}
+
+.slide-out {
+  left: -105% !important;
 }

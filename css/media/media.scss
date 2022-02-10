@@ -8,11 +8,18 @@ $xxxl: 1600px;
 
 // color
 $th-blue: #3457d1;
-
+$base-dark: #08080c;
+$light-dark: #171a1e;
 @mixin media($size) {
   @media screen and (min-width: #{$size}) {
     @content;
   }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 // psudo element
@@ -23,4 +30,11 @@ $th-blue: #3457d1;
   height: 100%;
   top: 0;
   left: 0;
+}
+
+@mixin transition {
+  transition: all ease-in-out 0.3s;
+}
+@mixin border {
+  border-bottom: 1px solid #242424;
 }

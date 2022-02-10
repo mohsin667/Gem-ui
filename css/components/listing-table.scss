@@ -12,17 +12,6 @@
     }
   }
 
-  .btn.mini {
-    height: auto;
-    min-height: auto;
-    line-height: normal;
-    font-size: 12px;
-    padding: 10px 15px;
-    @include media($xxxl) {
-      padding: 10px 20px;
-      font-size: 14px;
-    }
-  }
   .nice {
     max-height: 380px;
     padding-right: 10px;

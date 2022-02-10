@@ -1,4 +1,4 @@
-nav {
+.navigation {
   padding: 20px 0;
   border-bottom: 1px solid #242424;
   margin-bottom: 50px;
@@ -12,13 +12,59 @@ nav {
       height: 50px;
     }
   }
-  .logo {
-    max-width: 120px;
-    @include media($lg) {
-      max-width: 150px;
-    }
-  }
 }
 .profile-block {
   font-weight: 700;
+}
+
+.dashborad-navbar {
+  border: none;
+  height: 148px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  @include transition;
+  @include media($lg) {
+    height: 82px;
+    position: static;
+  }
+}
+
+.th-dark-blue {
+  .dashborad-navbar {
+    background: #000;
+    @include media($lg) {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+    }
+  }
+}
+
+.th-dark-blue {
+  .navbar-brand {
+    background: #000;
+    height: 76px;
+    @include media($lg) {
+      height: auto;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+    }
+  }
+}
+
+.logo {
+  max-width: 120px;
+  @include media($lg) {
+    max-width: 150px;
+  }
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 100%;
+  @include media($lg) {
+    width: 30px;
+    height: 30px;
+  }
 }
