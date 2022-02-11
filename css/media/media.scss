@@ -10,6 +10,8 @@ $xxxl: 1600px;
 $th-blue: #3457d1;
 $base-dark: #08080c;
 $light-dark: #171a1e;
+$dark-grey: #1e2125;
+$grey-text: #7f8081;
 @mixin media($size) {
   @media screen and (min-width: #{$size}) {
     @content;

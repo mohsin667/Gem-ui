@@ -1,0 +1,36 @@
+.filter-form {
+  margin-left: -16px;
+}
+
+.content-body {
+  &.event-screen {
+    max-height: 100%;
+    align-self: flex-start;
+  }
+  .cards-wrapper {
+    &.event-wrapper {
+      height: auto;
+    }
+  }
+}
+
+.event-list {
+  order: 2;
+  margin-top: 24px;
+  width: 100%;
+  @include media($lg) {
+    order: initial;
+    margin-top: 0;
+    width: calc(100% - 384px);
+  }
+}
+
+.no-event {
+  background-color: $light-dark;
+  color: $grey-text;
+  padding: 14px 10px;
+  p {
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+}

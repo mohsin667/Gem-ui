@@ -217,6 +217,17 @@ li {
       box-shadow: 0 0 0 0.25rem rgb(52, 87, 209);
     }
   }
+  .form-select {
+    background-color: #000;
+    background-image: url("../images/dropdown.svg");
+    color: #f5f5f5;
+    border-color: #242424;
+    padding: 8px 40px 8px 8px;
+    background-repeat: no-repeat;
+    &:focus {
+      box-shadow: none;
+    }
+  }
 }
 
 .link {
@@ -232,4 +243,107 @@ li {
 
 .slide-out {
   left: -105% !important;
+}
+
+.th-dark-blue {
+  .calender {
+    background-color: $light-dark;
+    border: 1px solid $dark-grey;
+    .ui-datepicker-prev {
+      background-image: url("../images/icons/left-arrow.svg");
+    }
+    .ui-datepicker-next {
+      background-image: url("../images/icons/right-arrow.svg");
+    }
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+      background-color: $dark-grey;
+    }
+    .ui-datepicker-title {
+      select {
+        background-color: $dark-grey;
+        background-image: url("../images/date-dropdown.svg");
+        color: #f5f5f5;
+      }
+    }
+    table {
+      th {
+        color: #7f8081;
+      }
+      td {
+        a {
+          border: 2px solid $light-dark;
+          background-color: $dark-grey;
+        }
+      }
+    }
+  }
+}
+
+.calender {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 346px;
+  .ui-datepicker-header {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    .ui-datepicker-prev {
+      order: 1;
+    }
+    .ui-datepicker-next {
+      order: 3;
+    }
+    .ui-datepicker-prev,
+    .ui-datepicker-next {
+      width: 38px;
+      height: 38px;
+      border-radius: 100%;
+      color: transparent;
+      font-size: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+
+    .ui-datepicker-title {
+      order: 2;
+      padding: 10px 40px;
+      select {
+        border-radius: 4px;
+        padding: 8px 20px 8px 8px;
+        margin: 0 1px;
+        border-color: transparent;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 18px;
+        font-weight: bold;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10px) calc(42px - 27px);
+        line-height: normal;
+        &:first-child {
+          background-position: calc(100% - 17px) calc(42px - 27px);
+        }
+      }
+    }
+  }
+  table {
+    width: 100%;
+    text-align: center;
+    th {
+      padding-bottom: 20px;
+    }
+    td {
+      padding: 0px;
+      a {
+        display: block;
+        padding: 8.3px 10px;
+        border: 2px solid $light-dark;
+        background-color: $dark-grey;
+        border-radius: 5px;
+      }
+    }
+  }
 }

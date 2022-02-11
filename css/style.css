@@ -174,6 +174,15 @@ li {
     color: rgba(245, 245, 245, 0.65);
     background-color: transparent;
     box-shadow: 0 0 0 0.25rem #3457d1; }
+.th-dark-blue .form-select {
+  background-color: #000;
+  background-image: url("../images/dropdown.svg");
+  color: #f5f5f5;
+  border-color: #242424;
+  padding: 8px 40px 8px 8px;
+  background-repeat: no-repeat; }
+  .th-dark-blue .form-select:focus {
+    box-shadow: none; }
 
 .link {
   color: #3457d1; }
@@ -185,6 +194,81 @@ li {
 
 .slide-out {
   left: -105% !important; }
+
+.th-dark-blue .calender {
+  background-color: #171a1e;
+  border: 1px solid #1e2125; }
+  .th-dark-blue .calender .ui-datepicker-prev {
+    background-image: url("../images/icons/left-arrow.svg"); }
+  .th-dark-blue .calender .ui-datepicker-next {
+    background-image: url("../images/icons/right-arrow.svg"); }
+  .th-dark-blue .calender .ui-datepicker-prev,
+  .th-dark-blue .calender .ui-datepicker-next {
+    background-color: #1e2125; }
+  .th-dark-blue .calender .ui-datepicker-title select {
+    background-color: #1e2125;
+    background-image: url("../images/date-dropdown.svg");
+    color: #f5f5f5; }
+  .th-dark-blue .calender table th {
+    color: #7f8081; }
+  .th-dark-blue .calender table td a {
+    border: 2px solid #171a1e;
+    background-color: #1e2125; }
+
+.calender {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 346px; }
+  .calender .ui-datepicker-header {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center; }
+    .calender .ui-datepicker-header .ui-datepicker-prev {
+      order: 1; }
+    .calender .ui-datepicker-header .ui-datepicker-next {
+      order: 3; }
+    .calender .ui-datepicker-header .ui-datepicker-prev,
+    .calender .ui-datepicker-header .ui-datepicker-next {
+      width: 38px;
+      height: 38px;
+      border-radius: 100%;
+      color: transparent;
+      font-size: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer; }
+    .calender .ui-datepicker-header .ui-datepicker-title {
+      order: 2;
+      padding: 10px 40px; }
+      .calender .ui-datepicker-header .ui-datepicker-title select {
+        border-radius: 4px;
+        padding: 8px 20px 8px 8px;
+        margin: 0 1px;
+        border-color: transparent;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: 18px;
+        font-weight: bold;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10px) calc(42px - 27px);
+        line-height: normal; }
+        .calender .ui-datepicker-header .ui-datepicker-title select:first-child {
+          background-position: calc(100% - 17px) calc(42px - 27px); }
+  .calender table {
+    width: 100%;
+    text-align: center; }
+    .calender table th {
+      padding-bottom: 20px; }
+    .calender table td {
+      padding: 0px; }
+      .calender table td a {
+        display: block;
+        padding: 8.3px 10px;
+        border: 2px solid #171a1e;
+        background-color: #1e2125;
+        border-radius: 5px; }
 
 .navigation {
   padding: 20px 0;
@@ -816,5 +900,32 @@ li {
     @media screen and (min-width: 992px) {
       .cards-wrapper .game-card-wrapper.card-count-3 .game-card img {
         margin: 0 auto 20px; } }
+
+.filter-form {
+  margin-left: -16px; }
+
+.content-body.event-screen {
+  max-height: 100%;
+  align-self: flex-start; }
+.content-body .cards-wrapper.event-wrapper {
+  height: auto; }
+
+.event-list {
+  order: 2;
+  margin-top: 24px;
+  width: 100%; }
+  @media screen and (min-width: 992px) {
+    .event-list {
+      order: initial;
+      margin-top: 0;
+      width: calc(100% - 384px); } }
+
+.no-event {
+  background-color: #171a1e;
+  color: #7f8081;
+  padding: 14px 10px; }
+  .no-event p {
+    margin-bottom: 0;
+    font-weight: 500; }
 
 /*# sourceMappingURL=style.css.map */
