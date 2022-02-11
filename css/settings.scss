@@ -321,14 +321,15 @@ li {
         font-size: 18px;
         font-weight: bold;
         background-repeat: no-repeat;
-        background-position: calc(100% - 10px) calc(42px - 27px);
+        background-position: calc(100% - 15px) calc(100% - 13px);
         line-height: normal;
         &:first-child {
-          background-position: calc(100% - 17px) calc(42px - 27px);
+          background-position: calc(100% - 10px) calc(100% - 13px);
         }
       }
     }
   }
+
   table {
     width: 100%;
     text-align: center;
