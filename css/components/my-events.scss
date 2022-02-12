@@ -23,6 +23,23 @@
     margin-top: 0;
     width: calc(100% - 384px);
   }
+  .event {
+    background-color: $light-dark;
+    padding: 15px;
+    border-radius: 8px;
+    .round {
+      padding: 20px 40px;
+      min-width: 130px;
+      background-color: rgba(52, 87, 209, 0.53);
+      &:before {
+        // height: 100%;
+        // width: 100%;
+        background: linear-gradient(270deg, rgba(39, 58, 125, 0.1), $light-dark);
+        background: -moz-linear-gradient(270deg, rgba(39, 58, 125, 0.1), $light-dark);
+        background: -webkit-linear-gradient(270deg, rgba(39, 58, 125, 0.1), $light-dark);
+      }
+    }
+  }
 }
 
 .no-event {

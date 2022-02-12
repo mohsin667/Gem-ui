@@ -919,6 +919,18 @@ li {
       order: initial;
       margin-top: 0;
       width: calc(100% - 384px); } }
+  .event-list .event {
+    background-color: #171a1e;
+    padding: 15px;
+    border-radius: 8px; }
+    .event-list .event .round {
+      padding: 20px 40px;
+      min-width: 130px;
+      background-color: rgba(52, 87, 209, 0.53); }
+      .event-list .event .round:before {
+        background: linear-gradient(270deg, rgba(39, 58, 125, 0.1), #171a1e);
+        background: -moz-linear-gradient(270deg, rgba(39, 58, 125, 0.1), #171a1e);
+        background: -webkit-linear-gradient(270deg, rgba(39, 58, 125, 0.1), #171a1e); }
 
 .no-event {
   background-color: #171a1e;
