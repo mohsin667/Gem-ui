@@ -628,7 +628,7 @@ li {
       margin-top: 2px; }
 
 .form-bg {
-  background-image: url(../../images/form-bg.jpg);
+  background-image: url(../images/form-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
@@ -1109,5 +1109,20 @@ p.message {
 
 .close-popup {
   cursor: pointer; }
+
+.downloads-banner {
+  background-color: #3457d1;
+  border-radius: 4px; }
+  .downloads-banner .banner-wrapper {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .downloads-banner .banner-wrapper h2 {
+      font-weight: 700;
+      max-width: 450px; }
+    .downloads-banner .banner-wrapper img {
+      margin: 0 30px; }
 
 /*# sourceMappingURL=style.css.map */

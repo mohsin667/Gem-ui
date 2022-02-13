@@ -34,26 +34,29 @@ $(document).ready(() => {
     });
   });
 
-  addEventButton.addEventListener("click", function () {
-    addEventPopup.classList.add("in");
-    popup.classList.add("in");
-    const closeControl = document.querySelector(".popup.in");
-    const eventPopup = document.querySelector(".add-event-popup");
+  if (addEventButton) {
+    addEventButton.addEventListener("click", function () {
+      addEventPopup.classList.add("in");
+      popup.classList.add("in");
+      const closeControl = document.querySelector(".popup.in");
+      const eventPopup = document.querySelector(".add-event-popup");
 
-    closeControl.addEventListener("click", function () {
-      popup.classList.remove("in");
-      eventPopup.classList.remove("in");
-      addEventPopup.classList.remove("in");
+      closeControl.addEventListener("click", function () {
+        popup.classList.remove("in");
+        eventPopup.classList.remove("in");
+        addEventPopup.classList.remove("in");
+      });
     });
-  });
+  }
 
-  nextEvent.addEventListener("click", function () {
-    form1.style.marginLeft = "-100%";
-  });
-  back.addEventListener("click", function () {
-    form1.style.marginLeft = "0";
-  });
-
+  if (nextEvent) {
+    nextEvent.addEventListener("click", function () {
+      form1.style.marginLeft = "-100%";
+    });
+    back.addEventListener("click", function () {
+      form1.style.marginLeft = "0";
+    });
+  }
   $(".nice").niceScroll({
     cursorcolor: "#3457D1",
     cursorwidth: "4px"

@@ -1,0 +1,18 @@
+.downloads-banner {
+  background-color: $th-blue;
+  border-radius: 4px;
+  .banner-wrapper {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    h2 {
+      font-weight: 700;
+      max-width: 450px;
+    }
+    img {
+      margin: 0 30px;
+    }
+  }
+}
