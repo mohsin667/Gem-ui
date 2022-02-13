@@ -21,7 +21,7 @@
   @include media($lg) {
     order: initial;
     margin-top: 0;
-    width: calc(100% - 384px);
+    width: calc(100% - 350px);
   }
   .event {
     background-color: $light-dark;

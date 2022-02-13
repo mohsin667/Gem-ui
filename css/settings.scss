@@ -39,7 +39,15 @@ h3 {
 p {
   margin-bottom: 10px;
 }
+
 .container-fluid {
+  max-width: 1400px;
+  @include media($xl) {
+    padding: 0 30px;
+  }
+}
+
+.ui-datepicker .container-fluid {
   padding-right: var(--bs-gutter-x, 15px);
   padding-left: var(--bs-gutter-x, 15px);
   @include media($lg) {
@@ -55,25 +63,22 @@ p {
 }
 
 .gloabal-heading {
-  font-size: 22px;
-  @include media($xl) {
-    font-size: 32px;
-  }
-  @include media($xxl) {
-    font-size: 38px;
+  font-size: 20px;
+  @include media($lg) {
+    font-size: 28px;
   }
   span {
     color: $th-blue;
   }
   &.medium {
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 18px;
     @include media($lg) {
-      font-size: 28px;
+      font-size: 22px;
     }
   }
   &.small {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -90,12 +95,11 @@ li {
   background-color: transparent;
   border: 1px solid $th-blue;
   color: $th-blue;
-  padding: 10px;
+  padding: 8px 10px;
   font-size: 14px;
   line-height: 1.4;
   @include media($xl) {
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 8px 15px;
   }
   span {
     display: inline-block;
@@ -283,7 +287,7 @@ li {
 .ui-datepicker {
   padding: 20px;
   border-radius: 8px;
-  max-width: 346px;
+  max-width: 300px;
   display: none;
   .ui-datepicker-header {
     padding-bottom: 20px;
