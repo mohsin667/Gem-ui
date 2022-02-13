@@ -246,7 +246,7 @@ li {
 }
 
 .th-dark-blue {
-  .calender {
+  .ui-datepicker {
     background-color: $light-dark;
     border: 1px solid $dark-grey;
     .ui-datepicker-prev {
@@ -280,10 +280,11 @@ li {
   }
 }
 
-.calender {
+.ui-datepicker {
   padding: 20px;
   border-radius: 8px;
   max-width: 346px;
+  display: none;
   .ui-datepicker-header {
     padding-bottom: 20px;
     display: flex;

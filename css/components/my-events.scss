@@ -27,16 +27,74 @@
     background-color: $light-dark;
     padding: 15px;
     border-radius: 8px;
+    position: relative;
+    .copy-event {
+      font-size: 14px;
+      color: $th-blue;
+      cursor: pointer;
+      width: 100%;
+      padding-left: 50%;
+      padding-top: 10px;
+      @include media($lg) {
+        padding-top: 0;
+        padding-left: 0;
+        width: auto;
+        right: 15px;
+        position: absolute;
+      }
+    }
     .round {
       padding: 20px 40px;
       min-width: 130px;
       background-color: rgba(52, 87, 209, 0.53);
+      max-width: 50%;
       &:before {
-        // height: 100%;
-        // width: 100%;
         background: linear-gradient(270deg, rgba(39, 58, 125, 0.1), $light-dark);
         background: -moz-linear-gradient(270deg, rgba(39, 58, 125, 0.1), $light-dark);
         background: -webkit-linear-gradient(270deg, rgba(39, 58, 125, 0.1), $light-dark);
+      }
+    }
+    .round-details {
+      max-width: 50%;
+      .gloabal-heading {
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      p {
+        color: $grey-text;
+        margin-bottom: 5px;
+      }
+      .status {
+        position: relative;
+        margin-left: 10px;
+        font-weight: 500;
+        &::before {
+          content: "";
+          width: 5px;
+          height: 5px;
+          border-radius: 100%;
+          position: absolute;
+          top: 3px;
+          left: -10px;
+        }
+      }
+      .active {
+        color: $active;
+        &:before {
+          background-color: $active;
+        }
+      }
+      .inactive {
+        color: red;
+        &:before {
+          background-color: red;
+        }
+      }
+      .pending {
+        color: yellowgreen;
+        &:before {
+          background-color: yellowgreen;
+        }
       }
     }
   }
@@ -50,4 +108,159 @@
     margin-bottom: 0;
     font-weight: 500;
   }
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  @include transition;
+  &.in {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transform: translate(0, 0);
+    background-color: #000;
+    .side-popup {
+      right: 0;
+    }
+  }
+  form {
+    padding-top: 30px;
+  }
+}
+
+.th-dark-blue {
+  .popup {
+    &.in {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+  .side-popup {
+    background-color: #000;
+    h2 {
+      border-bottom: 1px solid $border;
+      padding-bottom: 10px;
+      height: 50px;
+    }
+    select {
+      background-color: #000 !important;
+      color: $grey-text;
+    }
+    label {
+      color: $grey-text;
+      white-space: nowrap;
+    }
+    .popup-form {
+      height: calc(100% - 60px);
+      max-height: calc(100% - 60px);
+    }
+  }
+}
+
+.side-popup {
+  width: 100%;
+  max-width: 600px;
+  height: 100vh;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  transition: all ease-in-out 0.5s;
+  z-index: 99;
+  padding: 15px;
+  @include media($lg) {
+    padding: 30px;
+  }
+  &.in {
+    right: 0%;
+  }
+  .form-group {
+    margin-bottom: 15px;
+    @include media($lg) {
+      margin-bottom: 20px;
+    }
+  }
+  label {
+    margin-bottom: 10px;
+  }
+  .form-item {
+    flex-grow: 1;
+    padding-right: 10px;
+  }
+}
+
+.datepicker {
+  position: relative;
+  .fa-calendar-alt {
+    color: $grey-text;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+  }
+}
+
+.popup-form {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  h2 {
+    margin-bottom: 20px;
+    height: 40px;
+  }
+  .btn.big {
+    margin: 0 auto;
+    @include media($lg) {
+      width: calc(100% - 50px);
+    }
+  }
+}
+
+.add-event-popup {
+  .form-steps {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: nowrap;
+    .form-element {
+      min-width: 100%;
+      position: relative;
+      padding: 5px;
+    }
+  }
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    span {
+      color: $th-blue;
+    }
+  }
+  .btn.big {
+    margin-top: 10px;
+    @include media($lg) {
+      margin-top: 50px;
+    }
+  }
+}
+
+.form-element {
+  @include transition;
+}
+
+p.message {
+  margin: 10px 0;
+  color: rgba(245, 245, 245, 0.3);
+}
+
+.close-popup {
+  cursor: pointer;
 }

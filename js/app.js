@@ -1,4 +1,59 @@
 $(document).ready(() => {
+  const addEvent = document.querySelectorAll(".copy-event");
+  const popup = document.querySelector(".popup");
+  const closePopup = document.querySelectorAll(".close-popup");
+  const addEventButton = document.querySelector("#addEvent");
+  const addEventPopup = document.querySelector(".add-event-popup");
+  const nextEvent = document.querySelector("#nextEvent");
+  const back = document.querySelector("#back");
+  const form1 = document.querySelector(".form-1");
+
+  // make a copy popup
+
+  addEvent.forEach(elm => {
+    elm.addEventListener("click", function () {
+      popup.classList.add("in");
+      const closeControl = document.querySelector(".popup.in");
+      const eventPopup = document.querySelector(".event-popup");
+      closeControl.addEventListener("click", function () {
+        popup.classList.remove("in");
+        eventPopup.classList.remove("in");
+        addEventPopup.classList.remove("in");
+      });
+      eventPopup.classList.add("in");
+    });
+  });
+
+  closePopup.forEach(elm => {
+    elm.addEventListener("click", function () {
+      const eventPopup = document.querySelector(".event-popup");
+      const popup = document.querySelector(".popup");
+      popup.classList.remove("in");
+      eventPopup.classList.remove("in");
+      addEventPopup.classList.remove("in");
+    });
+  });
+
+  addEventButton.addEventListener("click", function () {
+    addEventPopup.classList.add("in");
+    popup.classList.add("in");
+    const closeControl = document.querySelector(".popup.in");
+    const eventPopup = document.querySelector(".add-event-popup");
+
+    closeControl.addEventListener("click", function () {
+      popup.classList.remove("in");
+      eventPopup.classList.remove("in");
+      addEventPopup.classList.remove("in");
+    });
+  });
+
+  nextEvent.addEventListener("click", function () {
+    form1.style.marginLeft = "-100%";
+  });
+  back.addEventListener("click", function () {
+    form1.style.marginLeft = "0";
+  });
+
   $(".nice").niceScroll({
     cursorcolor: "#3457D1",
     cursorwidth: "4px"
@@ -24,23 +79,12 @@ $(document).ready(() => {
     dateFormat: "dd/mm/yy",
     yearRange: "-90:+00"
   });
-  $("#date").datepicker("show");
+  // $("#date").datepicker("show");
+
+  $("#event-date").datepicker({
+    changeMonth: true,
+    changeYear: true,
+    dateFormat: "dd/mm/yy",
+    yearRange: "-90:+00"
+  });
 });
-
-var User = function (firstName, courseCount) {
-  this.firstName = firstName;
-  this.courseCount = courseCount;
-  this.getCourseCount = function () {
-    console.log(`Course count is: ${this.courseCount}`);
-  };
-};
-
-User.prototype.getFirstName = function () {
-  console.log(`Your first name is ${this.firstName}`);
-};
-
-var hitesh = new User("hitesh", 2);
-hitesh.getFirstName();
-console.log(hitesh);
-var sam = new User("sam", 1);
-console.log(sam);
