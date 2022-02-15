@@ -1,3 +1,7 @@
+.dashboard {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .side {
   width: 100%;
   @include media($lg) {
@@ -40,7 +44,6 @@
     }
   }
 }
-
 .sidebar {
   padding: 15px;
   height: calc(100vh - 82px);
@@ -78,6 +81,9 @@
   border-radius: 4px;
   padding: 45px 15px;
   max-height: calc(100vh - 50px);
+  &.default {
+    max-height: 100%;
+  }
   @include media($lg) {
     max-height: calc(100vh - 140px);
     margin-top: 30px;

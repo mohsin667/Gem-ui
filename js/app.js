@@ -10,6 +10,10 @@ $(document).ready(() => {
 
   // make a copy popup
 
+  $("#flexSwitchCheckChecked").on("change", function () {
+    $("body").toggleClass("th-dark-blue");
+  });
+
   addEvent.forEach(elm => {
     elm.addEventListener("click", function () {
       popup.classList.add("in");
@@ -62,6 +66,10 @@ $(document).ready(() => {
     cursorwidth: "4px"
   });
 
+  $(".view-player").on("click", function () {
+    $(".player-popup").addClass("in");
+  });
+
   $("#close").on("click", function () {
     $(".dashborad-navbar").addClass("slide-out");
 
@@ -71,6 +79,16 @@ $(document).ready(() => {
   $("#open").on("click", function () {
     $(".dashborad-navbar").removeClass("slide-out");
     $(".sidebar.side").removeClass("slide-out");
+  });
+
+  $(".d-close").on("click", function () {
+    $(".popup").removeClass("in");
+  });
+  $(".d-location").on("click", function () {
+    $(".popup").addClass("in");
+  });
+  $(".popup .layer").on("click", function () {
+    $(this).closest(".popup").removeClass("in");
   });
 
   // $("#datetimepicker1").data("DateTimePicker").show();

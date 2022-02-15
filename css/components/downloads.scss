@@ -7,12 +7,70 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    height: 120px;
     h2 {
       font-weight: 700;
       max-width: 450px;
     }
     img {
-      margin: 0 30px;
+      margin: 0 15px;
+      height: 100%;
+      @include media($lg) {
+        margin: 0 30px;
+      }
+      &.banner-1 {
+        margin-top: -30px;
+      }
+      &.banner-2 {
+        display: none;
+        margin-bottom: -30px;
+        @include media($lg) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.box-row {
+  padding-top: 30px;
+  flex-flow: wrap;
+  .box-column {
+    border-radius: 4px;
+    background-color: $light-dark;
+    background: linear-gradient(270deg, $light-dark, #000);
+    background: -moz-linear-gradient(270deg, $light-dark, #000);
+    background: -webkit-linear-gradient(270deg, $light-dark, #000);
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 25px 25px 85px;
+    margin-bottom: 20px;
+    position: relative;
+    @include media($lg) {
+      margin-bottom: 0;
+      padding: 45px 35px;
+      text-align: center;
+      width: calc(100% / 3 - 20px);
+    }
+    img {
+      position: absolute;
+      width: 50px;
+      top: 25px;
+      left: 25px;
+      @include media($lg) {
+        position: static;
+        margin-bottom: 20px;
+        width: auto;
+      }
+    }
+    a {
+      font-weight: 700;
+      color: $th-blue;
+      text-decoration: underline;
+    }
+    p,
+    a {
+      margin-bottom: 0;
     }
   }
 }

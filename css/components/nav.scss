@@ -1,7 +1,7 @@
 .navigation {
   padding: 10px 0;
-  border-bottom: 1px solid #242424;
   margin-bottom: 30px;
+  @include transition;
   .profile-img {
     width: 30px;
     height: 30px;
@@ -10,6 +10,12 @@
     @include media($lg) {
       width: 40px;
       height: 40px;
+    }
+  }
+  .profile {
+    i {
+      font-size: 30px;
+      margin-left: 10px;
     }
   }
 }

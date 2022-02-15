@@ -1,0 +1,103 @@
+.th-dark-blue {
+  .my-account {
+    .gloabal-heading {
+      color: $grey-text;
+    }
+  }
+}
+.my-account {
+  .gloabal-heading {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+}
+.user-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  margin-right: 20px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.uploader {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #242424;
+  img {
+    margin-right: 15px;
+  }
+  .form-group {
+    display: flex;
+    flex-flow: column;
+    padding-top: 10px;
+    p {
+      font-weight: 700;
+      color: $grey-text;
+    }
+    .danger {
+      &:hover {
+        color: #de3b2d;
+      }
+    }
+    .inputFile {
+      width: 100%;
+      position: relative;
+      cursor: pointer;
+      input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        cursor: pointer;
+        font-size: 0;
+      }
+      .form-control {
+        color: $grey-text;
+        font-weight: 700;
+        padding: 12px 30px;
+      }
+    }
+  }
+}
+
+.th-dark-blue {
+  .tournament-table {
+    td {
+      background-color: $light-dark;
+      &:first-child {
+        border-radius: 4px 0 0 6px;
+      }
+      &:last-child {
+        border-radius: 0 4px 6px 0;
+      }
+    }
+  }
+}
+.tournament-table {
+  font-weight: 700;
+  th {
+    padding: 10px 20px 20px;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+  td {
+    border-bottom: 4px solid #000;
+    &:last-child {
+      text-align: right;
+    }
+    .tab-cell {
+      padding: 10px 20px;
+      a {
+      }
+    }
+  }
+}

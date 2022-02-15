@@ -14,6 +14,7 @@ $dark-grey: #1e2125;
 $grey-text: #7f8081;
 $active: #2abb69;
 $border: #242424;
+$black: #171616;
 @mixin media($size) {
   @media screen and (min-width: #{$size}) {
     @content;
@@ -37,7 +38,7 @@ $border: #242424;
 }
 
 @mixin transition {
-  transition: all ease-in-out 0.3s;
+  transition: all ease 0.3s;
 }
 @mixin border {
   border-bottom: 1px solid #242424;

@@ -72,8 +72,8 @@
                     </svg>
                     Dashboard</a>
                 </li>
-                <li><a class="active" href="/my-location.html"><svg width="28" height="28" viewBox="0 0 28 28"
-                      fill="none" xmlns="http://www.w3.org/2000/svg">
+                <li><a href="/my-location.html"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M24.0567 9.85835C22.8317 4.46835 18.13 2.04169 14 2.04169C14 2.04169 14 2.04169 13.9883 2.04169C9.86999 2.04169 5.15666 4.45669 3.93166 9.84669C2.56666 15.8667 6.25332 20.965 9.58999 24.1734C10.8267 25.3634 12.4133 25.9584 14 25.9584C15.5867 25.9584 17.1733 25.3634 18.3983 24.1734C21.735 20.965 25.4217 15.8784 24.0567 9.85835ZM14 15.7034C11.97 15.7034 10.325 14.0584 10.325 12.0284C10.325 9.99835 11.97 8.35335 14 8.35335C16.03 8.35335 17.675 9.99835 17.675 12.0284C17.675 14.0584 16.03 15.7034 14 15.7034Z"
                         fill="#F5F5F5" />
@@ -86,163 +86,146 @@
                         fill="#F5F5F5" />
                     </svg>
                     My Events</a></li>
-                <li><a href="/downloads.html"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                <li><a class="active" href="/downloads.html"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M18.8883 2.33337H9.11165C4.86498 2.33337 2.33331 4.86504 2.33331 9.11171V18.8767C2.33331 23.135 4.86498 25.6667 9.11165 25.6667H18.8766C23.1233 25.6667 25.655 23.135 25.655 18.8884V9.11171C25.6666 4.86504 23.135 2.33337 18.8883 2.33337ZM9.88165 12.81C10.22 12.4717 10.78 12.4717 11.1183 12.81L13.125 14.8167V7.59504C13.125 7.11671 13.5216 6.72004 14 6.72004C14.4783 6.72004 14.875 7.11671 14.875 7.59504V14.8167L16.8816 12.81C17.22 12.4717 17.78 12.4717 18.1183 12.81C18.4566 13.1484 18.4566 13.7084 18.1183 14.0467L14.6183 17.5467C14.5366 17.6284 14.4433 17.6867 14.3383 17.7334C14.2333 17.78 14.1166 17.8034 14 17.8034C13.8833 17.8034 13.7783 17.78 13.6616 17.7334C13.5566 17.6867 13.4633 17.6284 13.3816 17.5467L9.88165 14.0467C9.54331 13.7084 9.54331 13.16 9.88165 12.81ZM21.28 20.09C18.935 20.8717 16.4733 21.2684 14 21.2684C11.5266 21.2684 9.06498 20.8717 6.71998 20.09C6.26498 19.9384 6.01998 19.4367 6.17165 18.9817C6.32331 18.5267 6.81331 18.27 7.27998 18.4334C11.62 19.88 16.3916 19.88 20.7316 18.4334C21.1866 18.2817 21.6883 18.5267 21.84 18.9817C21.98 19.4484 21.735 19.9384 21.28 20.09Z"
                         fill="#F5F5F5" />
                     </svg>
                     Downloads</a></li>
-                <li><a href="/my-accounts.html">
+                <li><a href="#">
                     <i class="fas fa-user"></i> My Accounts
                   </a></li>
               </ul>
             </nav>
-            <a href="#" class="btn transparent logout-btn"><i class="fas fa-sign-out"></i>
-
-              Logout</a>
+            <a href="#" class="btn transparent logout-btn"><i class="fas fa-sign-out"></i>Logout</a>
           </div>
-          <div class=" content-body bg-black">
-            <div class="heading">
-              <div class="row align-items-start align-lg-items-center">
-                <div class="col-8">Add or manage your store location below.<br class="d-none d-lg-inline" />
-                  Deactivated stores will not show up in store locator apps</div>
-                <div class="col-4 d-flex justify-content-end"><a href="#" class="btn btn-active mini">Add Location</a>
+          <div class="content-body bg-black default my-account">
+            <h2 class="gloabal-heading medium">My Account</h2>
+            <form action="" class="uploader">
+              <div class="user-image">
+                <img class="user-image" class="me-3" src="./images/placeholder-image.png" alt="placeholder" />
+              </div>
+              <div class="form-group">
+                <p>Profile Picture</p>
+                <div class="d-flex align-items-center flex-nowrap">
+                  <div class="inputFile pe-2">
+                    <div class="form-control">Upload Image</div>
+                    <input type="file" />
+                  </div>
+                  <a href="#" class="danger">Delete</a>
                 </div>
               </div>
-            </div>
-            <div class="cards-wrapper">
-              <div class="nice">
-                <div class="game-card-wrapper pt-4 d-flex flex-wrap card-count-2">
+            </form>
 
-                  <div class="game-card p-3 d-flex">
-                    <img src="./images/game.png" alt="game" />
-                    <div class="game-card-details d-flex flex-lg-column justify-content-lg-around">
-                      <h2 class="gloabal-heading small">Test Location- Real Account</h2>
-                      <p>86092 Fisher Causeway, Romanfort,
-                        Bilzen, 95418, USA</p>
-                      <div class="btn-row d-flex align-items-center justify-content-between">
-                        <a href="#" class="btn btn-active mini">Edit</a>
-                        <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
-                      </div>
-                    </div>
+            <div class="personal-detail-form mt-5 mb-5">
+              <form action="">
+                <div class="row mb-4">
+                  <div class="col-5">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" />
                   </div>
-                  <div class="game-card p-3 d-flex">
-                    <img src="./images/game.png" alt="game" />
-                    <div class="game-card-details d-flex flex-lg-column justify-content-lg-around">
-                      <h2 class="gloabal-heading small">Test Location- Real Account</h2>
-                      <p>86092 Fisher Causeway, Romanfort,
-                        Bilzen, 95418, USA</p>
-                      <div class="btn-row d-flex align-items-center justify-content-between">
-                        <a href="#" class="btn btn-active mini">Edit</a>
-                        <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="game-card p-3 d-flex">
-                    <img src="./images/game.png" alt="game" />
-                    <div class="game-card-details d-flex flex-lg-column justify-content-lg-around">
-                      <h2 class="gloabal-heading small">Test Location- Real Account</h2>
-                      <p>86092 Fisher Causeway, Romanfort,
-                        Bilzen, 95418, USA</p>
-                      <div class="btn-row d-flex align-items-center justify-content-between">
-                        <a href="#" class="btn btn-active mini">Edit</a>
-                        <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="game-card p-3 d-flex">
-                    <img src="./images/game.png" alt="game" />
-                    <div class="game-card-details d-flex flex-lg-column justify-content-lg-around">
-                      <h2 class="gloabal-heading small">Test Location- Real Account</h2>
-                      <p>86092 Fisher Causeway, Romanfort,
-                        Bilzen, 95418, USA</p>
-                      <div class="btn-row d-flex align-items-center justify-content-between">
-                        <a href="#" class="btn btn-active mini">Edit</a>
-                        <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="game-card p-3 d-flex">
-                    <img src="./images/game.png" alt="game" />
-                    <div class="game-card-details d-flex flex-lg-column justify-content-lg-around">
-                      <h2 class="gloabal-heading small">Test Location- Real Account</h2>
-                      <p>86092 Fisher Causeway, Romanfort,
-                        Bilzen, 95418, USA</p>
-                      <div class="btn-row d-flex align-items-center justify-content-between">
-                        <a href="#" class="btn btn-active mini">Edit</a>
-                        <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="game-card p-3 d-flex">
-                    <img src="./images/game.png" alt="game" />
-                    <div class="game-card-details d-flex flex-lg-column justify-content-lg-around">
-                      <h2 class="gloabal-heading small">Test Location- Real Account</h2>
-                      <p>86092 Fisher Causeway, Romanfort,
-                        Bilzen, 95418, USA</p>
-                      <div class="btn-row d-flex align-items-center justify-content-between">
-                        <a href="#" class="btn btn-active mini">Edit</a>
-                        <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="game-card p-3 d-flex">
-                    <img src="./images/game.png" alt="game" />
-                    <div class="game-card-details d-flex flex-lg-column justify-content-lg-around">
-                      <h2 class="gloabal-heading small">Test Location- Real Account</h2>
-                      <p>86092 Fisher Causeway, Romanfort,
-                        Bilzen, 95418, USA</p>
-                      <div class="btn-row d-flex align-items-center justify-content-between">
-                        <a href="#" class="btn btn-active mini">Edit</a>
-                        <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="game-card p-3 d-flex">
-                    <img src="./images/game.png" alt="game" />
-                    <div class="game-card-details d-flex flex-lg-column justify-content-lg-around">
-                      <h2 class="gloabal-heading small">Test Location- Real Account</h2>
-                      <p>86092 Fisher Causeway, Romanfort,
-                        Bilzen, 95418, USA</p>
-                      <div class="btn-row d-flex align-items-center justify-content-between">
-                        <a href="#" class="btn btn-active mini">Edit</a>
-                        <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="game-card p-3 d-flex">
-                    <img src="./images/game.png" alt="game" />
-                    <div class="game-card-details d-flex flex-lg-column justify-content-lg-around">
-                      <h2 class="gloabal-heading small">Test Location- Real Account</h2>
-                      <p>86092 Fisher Causeway, Romanfort,
-                        Bilzen, 95418, USA</p>
-                      <div class="btn-row d-flex align-items-center justify-content-between">
-                        <a href="#" class="btn btn-active mini">Edit</a>
-                        <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
-                      </div>
-                    </div>
+                  <div class="col-5">
+                    <label for="name">Email</label>
+                    <input type="email" class="form-control" />
                   </div>
                 </div>
-              </div>
+                <div class="row mb-4">
+                  <div class="col-5">
+                    <label for="name">Phone Number</label>
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="col-5">
+                    <label for="name">Interest</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-auto">
+                    <button class="btn btn-active">Update</button>
+                  </div>
+                  <div class="col-auto align-items-center d-flex">
+                    <a href="#" class="blue">Change Password</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="tournament-table">
+              <h2 class="gloabal-heading medium">Tournaments</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>S.no.</th>
+                    <th>Player Name</th>
+                    <th>My Rank</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="tab-cell">01</div>
+                    </td>
+                    <td>
+                      <div class="tab-cell">Test Event</div>
+                    </td>
+                    <td>
+                      <div class="tab-cell"><a href="#">423</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="tab-cell">02</div>
+                    </td>
+                    <td>
+                      <div class="tab-cell">Test Event</div>
+                    </td>
+                    <td>
+                      <div class="tab-cell"><a href="#">423</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="tab-cell">03</div>
+                    </td>
+                    <td>
+                      <div class="tab-cell">Test Event</div>
+                    </td>
+                    <td>
+                      <div class="tab-cell"><a href="#">423</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="tab-cell">04</div>
+                    </td>
+                    <td>
+                      <div class="tab-cell">Test Event</div>
+                    </td>
+                    <td>
+                      <div class="tab-cell"><a href="#">423</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="tab-cell">05</div>
+                    </td>
+                    <td>
+                      <div class="tab-cell">Test Event</div>
+                    </td>
+                    <td>
+                      <div class="tab-cell"><a href="#">423</a></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="popup deactivate">
-      <div class="layer"></div>
-      <div class="conf text-center">
-        <i class="fas fa-exclamation-circle"></i>
-        <h2 class="gloabal-heading medium">Are you sure ?</h2>
-        <p>Are you sure you want to deactivate the location?</p>
-        <div class="btn-row">
-          <a href="#" class="btn btn-active mx-1">Yes</a>
-          <a href="#" class="btn btn-active mx-1 btn-danger d-close">No</a>
         </div>
       </div>
     </div>
   </main>
+
   <script src="./js/jquery.js"></script>
   <script src="./js/jquery-ui.min.js"></script>
   <script src="./js/jquery.nicescroll.min.js"></script>
