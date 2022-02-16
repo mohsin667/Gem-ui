@@ -66,6 +66,9 @@ $(document).ready(() => {
     cursorwidth: "4px"
   });
 
+  $("#leader-board").on("click", function () {
+    $(".leader-board").addClass("in");
+  });
   $(".view-player").on("click", function () {
     $(".player-popup").addClass("in");
   });
