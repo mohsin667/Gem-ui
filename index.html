@@ -21,7 +21,7 @@
   <title>Figma to Html</title>
 </head>
 
-<body class="">
+<body class="th-dark-blue">
   <img class="bg tdb" src="./images/background.png" alt="background" />
   <main>
     <!-- Navigation -->
@@ -68,7 +68,9 @@
                 Pairing</a>
               <a href="#" id="leader-board" class="btn"><span><img src="./images/leader.png" alt="leader"></span>Leader
                 Board</a>
-              <a href="#" class="inline-btn"><img src="./images/video-square.png" alt="video button">Match Clip</a>
+              <a href="#" data-src="https://www.youtube.com/embed/orDRnUXu-Rw" class="video-clip inline-btn"><img
+                  src="./images/video-square.png" alt="video button">Match
+                Clip</a>
             </div>
             <p class="danger">* Round cannont be started until pairing are advertised.</p>
 
@@ -105,7 +107,7 @@
           <div class="col-12 col-lg-8">
             <div class="d-flex justify-content-between align-items-center mb-3">
               <h2 class="gloabal-heading medium "><span>Player</span> Listings</h2>
-              <a href="#" class="btn btn-active mini">Add/edit Players</a>
+              <a href="#" class="btn btn-active mini view-player">Add/edit Players</a>
             </div>
 
             <div class="nice">
@@ -336,6 +338,15 @@
     </div>
   </main>
 
+  <div class="popup video-popup">
+    <div class="layer"></div>
+    <div class="popup-body popup-layer">
+      <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
   <div class="popup player-popup">
     <div class="layer"></div>
     <div class="popup-body">
@@ -465,7 +476,7 @@
     </div>
   </div>
 
-  <div class="popup leader-board in">
+  <div class="popup leader-board">
     <div class="layer"></div>
     <div class="popup-body">
       <div class="popup-header d-flex align-items-center justify-content-between">

@@ -11,6 +11,7 @@
     h2 {
       font-weight: 700;
       max-width: 450px;
+      color: #fff;
     }
     img {
       margin: 0 15px;
@@ -32,20 +33,34 @@
   }
 }
 
+.th-dark-blue {
+  .box-row {
+    .box-column {
+      background-color: $light-dark;
+      background: linear-gradient(270deg, $light-dark, #000);
+      background: -moz-linear-gradient(270deg, $light-dark, #000);
+      background: -webkit-linear-gradient(270deg, $light-dark, #000);
+    }
+  }
+}
+
 .box-row {
   padding-top: 30px;
   flex-flow: wrap;
   .box-column {
     border-radius: 4px;
-    background-color: $light-dark;
-    background: linear-gradient(270deg, $light-dark, #000);
-    background: -moz-linear-gradient(270deg, $light-dark, #000);
-    background: -webkit-linear-gradient(270deg, $light-dark, #000);
+    background-color: $sharp-white;
+    background: linear-gradient(270deg, $sharp-white, #f9f9f9);
+    background: -moz-linear-gradient(270deg, $sharp-white, #f9f9f9);
+    background: -webkit-linear-gradient(270deg, $sharp-white, #f9f9f9);
     justify-content: space-between;
     width: 100%;
     padding: 30px 25px 25px 85px;
     margin-bottom: 20px;
     position: relative;
+    p {
+      font-weight: 700;
+    }
     @include media($lg) {
       margin-bottom: 0;
       padding: 45px 35px;

@@ -1,5 +1,5 @@
 .navigation {
-  padding: 10px 0;
+  padding: 15px 0;
   margin-bottom: 30px;
   @include transition;
   .profile-img {
@@ -12,11 +12,11 @@
       height: 40px;
     }
   }
-  .profile {
-    i {
-      font-size: 30px;
-      margin-left: 10px;
-    }
+}
+.profile {
+  i {
+    font-size: 30px;
+    margin-left: 10px;
   }
 }
 .profile-block {
@@ -30,6 +30,9 @@
   top: 0;
   left: 0;
   width: 100%;
+  background-color: $off;
+  max-width: 100%;
+  overflow: hidden;
   @include transition;
   @include media($lg) {
     height: 82px;
@@ -40,10 +43,16 @@
 .th-dark-blue {
   .dashborad-navbar {
     background: #000;
-    @include media($lg) {
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
-    }
   }
+}
+
+.fa-bars,
+.fa-times {
+  color: #000;
+}
+
+.navbar-brand {
+  background-color: #f9f9f9;
 }
 
 .th-dark-blue {
@@ -52,7 +61,6 @@
     height: 76px;
     @include media($lg) {
       height: auto;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
     }
   }
 }

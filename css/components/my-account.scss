@@ -27,7 +27,7 @@
 .uploader {
   display: flex;
   padding-bottom: 20px;
-  border-bottom: 1px solid #242424;
+  border-bottom: 1px solid #f0f1f1;
   img {
     margin-right: 15px;
   }
@@ -57,20 +57,33 @@
         opacity: 0;
         cursor: pointer;
         font-size: 0;
+        background-color: $sharp-white;
       }
       .form-control {
         color: $grey-text;
         font-weight: 700;
         padding: 12px 30px;
+        background-color: $sharp-white;
       }
     }
   }
 }
 
+.tournament-table td {
+  background-color: $sharp-white;
+}
+
 .th-dark-blue {
+  .uploader {
+    border-bottom: 1px solid #242424;
+    .form-group .inputFile .form-control {
+      background-color: #000;
+    }
+  }
   .tournament-table {
     td {
       background-color: $light-dark;
+      border-bottom: 4px solid #000;
       &:first-child {
         border-radius: 4px 0 0 6px;
       }
@@ -90,7 +103,7 @@
     }
   }
   td {
-    border-bottom: 4px solid #000;
+    border-bottom: 4px solid #fff;
     &:last-child {
       text-align: right;
     }

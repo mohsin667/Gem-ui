@@ -15,6 +15,9 @@ $grey-text: #7f8081;
 $active: #2abb69;
 $border: #242424;
 $black: #171616;
+$off: #f9f9f9;
+$sharp-white: #f0f1f1;
+
 @mixin media($size) {
   @media screen and (min-width: #{$size}) {
     @content;

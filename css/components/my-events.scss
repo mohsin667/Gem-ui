@@ -2,6 +2,23 @@
   margin-left: -16px;
 }
 
+.th-dark-blue {
+  .event-list {
+    .event {
+      background-color: $light-dark;
+      .round h3,
+      .round h2 {
+        color: #fff;
+      }
+    }
+  }
+  .event-list .event .round:before {
+    background: linear-gradient(270deg, rgba(39, 58, 125, 0.1), $light-dark);
+    background: -moz-linear-gradient(270deg, rgba(39, 58, 125, 0.1), $light-dark);
+    background: -webkit-linear-gradient(270deg, rgba(39, 58, 125, 0.1), $light-dark);
+  }
+}
+
 .content-body {
   &.event-screen {
     max-height: 100%;
@@ -24,10 +41,14 @@
     width: calc(100% - 350px);
   }
   .event {
-    background-color: $light-dark;
+    background-color: $sharp-white;
     padding: 15px;
     border-radius: 8px;
     position: relative;
+    .round h3,
+    .round h2 {
+      color: $th-blue;
+    }
     .copy-event {
       font-size: 14px;
       color: $th-blue;
@@ -49,9 +70,9 @@
       background-color: rgba(52, 87, 209, 0.53);
       max-width: 50%;
       &:before {
-        background: linear-gradient(270deg, rgba(39, 58, 125, 0.1), $light-dark);
-        background: -moz-linear-gradient(270deg, rgba(39, 58, 125, 0.1), $light-dark);
-        background: -webkit-linear-gradient(270deg, rgba(39, 58, 125, 0.1), $light-dark);
+        background: linear-gradient(270deg, rgba(132, 150, 216, 0.1), $sharp-white);
+        background: -moz-linear-gradient(270deg, rgba(132, 150, 216, 0.1), $sharp-white);
+        background: -webkit-linear-gradient(270deg, rgba(132, 150, 216, 0.1), $sharp-white);
       }
     }
     .round-details {
@@ -118,10 +139,11 @@
   visibility: hidden;
   transition: all ease 0.3s;
   top: 0;
+  z-index: 99;
+
   &.in {
     opacity: 1;
     visibility: visible;
-    z-index: 99;
     transform-origin: center;
     transform: translate(0, 0);
     background-color: rgba(0, 0, 0, 0.9);
@@ -172,6 +194,7 @@
   transition: all ease-in-out 0.5s;
   z-index: 99;
   padding: 15px;
+  background-color: #fff;
   @include media($lg) {
     padding: 30px;
   }
@@ -186,6 +209,7 @@
   }
   label {
     margin-bottom: 10px;
+    color: $grey-text;
   }
   .form-item {
     flex-grow: 1;
@@ -214,9 +238,6 @@
   }
   .btn.big {
     margin: 0 auto;
-    @include media($lg) {
-      width: calc(100% - 50px);
-    }
   }
 }
 

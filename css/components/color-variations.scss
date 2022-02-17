@@ -11,9 +11,9 @@
 
 .navigation {
   border-bottom: 1px solid #d2d1d1;
-  .profile i {
-    color: $th-blue;
-  }
+}
+.profile i {
+  color: $th-blue;
 }
 
 .tdb {
@@ -21,7 +21,7 @@
 }
 
 .logo-white {
-  display: none;
+  display: none !important;
 }
 
 .round {
@@ -44,7 +44,7 @@
 }
 
 .right-col ul li {
-  background-color: #dcdedf;
+  background-color: $sharp-white;
 }
 .left-col {
   @include transition;
@@ -56,7 +56,7 @@
 }
 
 .listing-table table tbody tr {
-  background-color: #dcdedf;
+  background-color: $sharp-white;
   border-bottom: 7px solid #e5e5e5;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .timer {
-  background-color: #dcdedf;
+  background-color: $sharp-white;
   .time-col {
     background-color: rgba(159, 159, 159, 0.35);
     border: 1px solid rgba(52, 87, 209, 0.35);
@@ -83,9 +83,52 @@
   border-bottom: 1px solid #d2d1d1;
 }
 
+.sidebar {
+  background-color: #f9f9f9;
+}
+.sidebar-menues li a {
+  @include media($lg) {
+    background-color: $sharp-white;
+  }
+}
+
+.content-body {
+  background-color: $off;
+}
+
+// colour variants
 .th-dark-blue {
+  .fa-bars,
+  .fa-times {
+    color: #fff;
+  }
+  .content-body {
+    background-color: #000;
+  }
+  .sidebar-menues li a {
+    @include media($lg) {
+      background-color: $light-dark;
+    }
+    &:hover,
+    &.active {
+      color: #fff;
+      @include media($lg) {
+        background-color: #3457d1;
+        box-shadow: 0px 0px 10px 3px rgba(52, 87, 209, 0.5);
+      }
+    }
+  }
+  .sidebar {
+    background-color: #000;
+    @include media($lg) {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
+    }
+  }
   .popup.leader-board .player-chart li {
     background-color: #0e1014;
+    &:first-child {
+      background-color: transparent;
+    }
   }
   .popup.player-popup .popup-header {
     border-bottom: 1px solid #242424;
@@ -147,10 +190,10 @@
     display: block;
   }
   .logo-white {
-    display: block;
+    display: block !important;
   }
   .logo-black {
-    display: none;
+    display: none !important;
   }
   .profile-block span {
     color: #f5f5f5;

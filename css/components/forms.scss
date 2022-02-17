@@ -11,13 +11,37 @@
   }
   .row,
   .container {
-    min-height: 630px;
+    min-height: 535px;
+  }
+}
+
+.th-dark-blue {
+  .form-fields {
+    background-color: #000;
+  }
+  .form-fields p,
+  .form-fields h2 {
+    color: #fff;
+  }
+  .main-form {
+    label {
+      color: $grey-text;
+    }
+  }
+}
+
+.main-form {
+  .form-label {
+    color: #000;
+  }
+  label {
+    color: #000;
   }
 }
 
 .form-fields {
   padding: 30px 15px;
-  background-color: $base-dark;
+  background-color: #fff;
   @include flex-center;
   @include media($xl) {
     padding: 50px 15px;
@@ -27,7 +51,7 @@
   }
   p,
   h2 {
-    color: #fff;
+    color: #000;
   }
   h2.gloabal-heading {
     margin-bottom: 10px;

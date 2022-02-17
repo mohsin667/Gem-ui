@@ -37,188 +37,200 @@
 
     <!-- Navigation -->
     <nav class="d-flex justify-content-between py-0 my-0 flex-wrap dashborad-navbar slide-out">
-      <a class="navbar-brand side me-0 px-3 py-3 d-flex justify-content-between align-items-center" href="#"><img
-          class="logo" src="./images/logo.png" alt="logo" /> <i id="close" class="fal fa-times d-lg-none"></i></a>
-      <div class="profile px-3 py-3">
+      <a class="navbar-brand side me-0 px-3 py-3 d-flex justify-content-between align-items-center" href="#">
+        <img class="logo-white logo" src="./images/logo.png" alt="logo" />
+        <img class="logo-black logo" src="./images/logo-black.png" alt="logo" />
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" checked>
+        </div>
+        <i id="close" class="fal fa-times d-lg-none"></i>
+      </a>
+
+      <div class="profile d-flex align-items-center justify-content-between px-3 py-3">
         <a href="#" class=" d-flex justify-content-between align-items-center profile-block">
           <img class="me-2 profile-img" src="./images/placeholder.png" alt="placeholder" />
           <span>Liam Williams</span>
-          <img class="caret ms-2" src="./images/caret.png" alt="placeholder" />
+          <i class="fal fa-angle-down"></i>
         </a>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" checked>
+        </div>
       </div>
     </nav>
     <!-- Navigation -->
 
     <div class="dashboard">
-      <div class="container-fluid full-width">
-        <div class="row justify-content-between">
-          <div class="sidebar side slide-out">
-            <nav class="sidebar-menues">
-              <ul>
-                <li><a href="dashboard.html">
-                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M25.0834 12.7166V4.78331C25.0834 3.03331 24.3367 2.33331 22.4817 2.33331H17.7684C15.9134 2.33331 15.1667 3.03331 15.1667 4.78331V12.7166C15.1667 14.4666 15.9134 15.1666 17.7684 15.1666H22.4817C24.3367 15.1666 25.0834 14.4666 25.0834 12.7166Z"
-                        fill="#F5F5F5" />
-                      <path
-                        d="M12.8334 15.2833V23.2166C12.8334 24.9666 12.0867 25.6666 10.2317 25.6666H5.51835C3.66335 25.6666 2.91669 24.9666 2.91669 23.2166V15.2833C2.91669 13.5333 3.66335 12.8333 5.51835 12.8333H10.2317C12.0867 12.8333 12.8334 13.5333 12.8334 15.2833Z"
-                        fill="#F5F5F5" />
-                      <path
-                        d="M25.0834 23.2167V19.95C25.0834 18.2 24.3367 17.5 22.4817 17.5H17.7684C15.9134 17.5 15.1667 18.2 15.1667 19.95V23.2167C15.1667 24.9667 15.9134 25.6667 17.7684 25.6667H22.4817C24.3367 25.6667 25.0834 24.9667 25.0834 23.2167Z"
-                        fill="#F5F5F5" />
-                      <path
-                        d="M12.8334 8.04998V4.78331C12.8334 3.03331 12.0867 2.33331 10.2317 2.33331H5.51835C3.66335 2.33331 2.91669 3.03331 2.91669 4.78331V8.04998C2.91669 9.79998 3.66335 10.5 5.51835 10.5H10.2317C12.0867 10.5 12.8334 9.79998 12.8334 8.04998Z"
-                        fill="#F5F5F5" />
-                    </svg>
-                    Dashboard</a>
-                </li>
-                <li><a href="my-location.html"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M24.0567 9.85835C22.8317 4.46835 18.13 2.04169 14 2.04169C14 2.04169 14 2.04169 13.9883 2.04169C9.86999 2.04169 5.15666 4.45669 3.93166 9.84669C2.56666 15.8667 6.25332 20.965 9.58999 24.1734C10.8267 25.3634 12.4133 25.9584 14 25.9584C15.5867 25.9584 17.1733 25.3634 18.3983 24.1734C21.735 20.965 25.4217 15.8784 24.0567 9.85835ZM14 15.7034C11.97 15.7034 10.325 14.0584 10.325 12.0284C10.325 9.99835 11.97 8.35335 14 8.35335C16.03 8.35335 17.675 9.99835 17.675 12.0284C17.675 14.0584 16.03 15.7034 14 15.7034Z"
-                        fill="#F5F5F5" />
-                    </svg>
-                    My Location</a></li>
-                <li><a href="my-events.html"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M19.8333 2.33337H8.16667C5.6 2.33337 3.5 4.43337 3.5 7.00004V21C3.5 23.5667 5.6 25.6667 8.16667 25.6667H19.8333C22.4 25.6667 24.5 23.5667 24.5 21V7.00004C24.5 4.43337 22.4 2.33337 19.8333 2.33337ZM12.67 21.1634C12.495 21.3384 12.2733 21.42 12.0517 21.42C11.83 21.42 11.6083 21.3384 11.4333 21.1634L10.675 20.405L9.95167 21.1284C9.77667 21.3034 9.555 21.385 9.33333 21.385C9.11167 21.385 8.89 21.3034 8.715 21.1284C8.37667 20.79 8.37667 20.23 8.715 19.8917L9.43833 19.1684L8.75 18.48C8.41167 18.1417 8.41167 17.5817 8.75 17.2434C9.08833 16.905 9.64833 16.905 9.98667 17.2434L10.675 17.9317L11.3983 17.2084C11.7367 16.87 12.2967 16.87 12.635 17.2084C12.9733 17.5467 12.9733 18.1067 12.635 18.445L11.9117 19.1684L12.67 19.9267C13.0083 20.265 13.0083 20.825 12.67 21.1634ZM16.905 21.5717C16.2633 21.5717 15.7383 21.0584 15.7383 20.4167V20.3934C15.7383 19.7517 16.2633 19.2267 16.905 19.2267C17.5467 19.2267 18.0717 19.7517 18.0717 20.3934C18.0717 21.035 17.5467 21.5717 16.905 21.5717ZM19.2617 19.0517C18.62 19.0517 18.0833 18.5267 18.0833 17.885C18.0833 17.2434 18.5967 16.7184 19.2383 16.7184H19.2617C19.9033 16.7184 20.4283 17.2434 20.4283 17.885C20.4283 18.5267 19.9033 19.0517 19.2617 19.0517ZM21 10.7917C21 11.9117 20.0783 12.8334 18.9583 12.8334H9.04167C7.92167 12.8334 7 11.9117 7 10.7917V7.87504C7 6.75504 7.92167 5.83337 9.04167 5.83337H18.9583C20.0783 5.83337 21 6.75504 21 7.87504V10.7917Z"
-                        fill="#F5F5F5" />
-                    </svg>
-                    My Events</a></li>
-                <li><a class="active" href="downloads.html"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M18.8883 2.33337H9.11165C4.86498 2.33337 2.33331 4.86504 2.33331 9.11171V18.8767C2.33331 23.135 4.86498 25.6667 9.11165 25.6667H18.8766C23.1233 25.6667 25.655 23.135 25.655 18.8884V9.11171C25.6666 4.86504 23.135 2.33337 18.8883 2.33337ZM9.88165 12.81C10.22 12.4717 10.78 12.4717 11.1183 12.81L13.125 14.8167V7.59504C13.125 7.11671 13.5216 6.72004 14 6.72004C14.4783 6.72004 14.875 7.11671 14.875 7.59504V14.8167L16.8816 12.81C17.22 12.4717 17.78 12.4717 18.1183 12.81C18.4566 13.1484 18.4566 13.7084 18.1183 14.0467L14.6183 17.5467C14.5366 17.6284 14.4433 17.6867 14.3383 17.7334C14.2333 17.78 14.1166 17.8034 14 17.8034C13.8833 17.8034 13.7783 17.78 13.6616 17.7334C13.5566 17.6867 13.4633 17.6284 13.3816 17.5467L9.88165 14.0467C9.54331 13.7084 9.54331 13.16 9.88165 12.81ZM21.28 20.09C18.935 20.8717 16.4733 21.2684 14 21.2684C11.5266 21.2684 9.06498 20.8717 6.71998 20.09C6.26498 19.9384 6.01998 19.4367 6.17165 18.9817C6.32331 18.5267 6.81331 18.27 7.27998 18.4334C11.62 19.88 16.3916 19.88 20.7316 18.4334C21.1866 18.2817 21.6883 18.5267 21.84 18.9817C21.98 19.4484 21.735 19.9384 21.28 20.09Z"
-                        fill="#F5F5F5" />
-                    </svg>
-                    Downloads</a></li>
-                <li><a href="#">
-                    <i class="fas fa-user"></i> My Accounts
-                  </a></li>
-              </ul>
-            </nav>
-            <a href="#" class="btn transparent logout-btn"><i class="fas fa-sign-out"></i>Logout</a>
-          </div>
-          <div class="content-body bg-black default my-account">
-            <h2 class="gloabal-heading medium">My Account</h2>
-            <form action="" class="uploader">
-              <div class="user-image">
-                <img class="user-image" class="me-3" src="./images/placeholder-image.png" alt="placeholder" />
-              </div>
-              <div class="form-group">
-                <p>Profile Picture</p>
-                <div class="d-flex align-items-center flex-nowrap">
-                  <div class="inputFile pe-2">
-                    <div class="form-control">Upload Image</div>
-                    <input type="file" />
-                  </div>
-                  <a href="#" class="danger">Delete</a>
+      <div class="row">
+        <div class="container-fluid full-width">
+          <div class="row justify-content-between">
+            <div class="sidebar side slide-out">
+              <nav class="sidebar-menues">
+                <ul>
+                  <li><a href="dashboard.html">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M25.0834 12.7166V4.78331C25.0834 3.03331 24.3367 2.33331 22.4817 2.33331H17.7684C15.9134 2.33331 15.1667 3.03331 15.1667 4.78331V12.7166C15.1667 14.4666 15.9134 15.1666 17.7684 15.1666H22.4817C24.3367 15.1666 25.0834 14.4666 25.0834 12.7166Z"
+                          fill="#F5F5F5" />
+                        <path
+                          d="M12.8334 15.2833V23.2166C12.8334 24.9666 12.0867 25.6666 10.2317 25.6666H5.51835C3.66335 25.6666 2.91669 24.9666 2.91669 23.2166V15.2833C2.91669 13.5333 3.66335 12.8333 5.51835 12.8333H10.2317C12.0867 12.8333 12.8334 13.5333 12.8334 15.2833Z"
+                          fill="#F5F5F5" />
+                        <path
+                          d="M25.0834 23.2167V19.95C25.0834 18.2 24.3367 17.5 22.4817 17.5H17.7684C15.9134 17.5 15.1667 18.2 15.1667 19.95V23.2167C15.1667 24.9667 15.9134 25.6667 17.7684 25.6667H22.4817C24.3367 25.6667 25.0834 24.9667 25.0834 23.2167Z"
+                          fill="#F5F5F5" />
+                        <path
+                          d="M12.8334 8.04998V4.78331C12.8334 3.03331 12.0867 2.33331 10.2317 2.33331H5.51835C3.66335 2.33331 2.91669 3.03331 2.91669 4.78331V8.04998C2.91669 9.79998 3.66335 10.5 5.51835 10.5H10.2317C12.0867 10.5 12.8334 9.79998 12.8334 8.04998Z"
+                          fill="#F5F5F5" />
+                      </svg>
+                      Dashboard</a>
+                  </li>
+                  <li><a href="my-location.html"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M24.0567 9.85835C22.8317 4.46835 18.13 2.04169 14 2.04169C14 2.04169 14 2.04169 13.9883 2.04169C9.86999 2.04169 5.15666 4.45669 3.93166 9.84669C2.56666 15.8667 6.25332 20.965 9.58999 24.1734C10.8267 25.3634 12.4133 25.9584 14 25.9584C15.5867 25.9584 17.1733 25.3634 18.3983 24.1734C21.735 20.965 25.4217 15.8784 24.0567 9.85835ZM14 15.7034C11.97 15.7034 10.325 14.0584 10.325 12.0284C10.325 9.99835 11.97 8.35335 14 8.35335C16.03 8.35335 17.675 9.99835 17.675 12.0284C17.675 14.0584 16.03 15.7034 14 15.7034Z"
+                          fill="#F5F5F5" />
+                      </svg>
+                      My Location</a></li>
+                  <li><a href="my-events.html"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M19.8333 2.33337H8.16667C5.6 2.33337 3.5 4.43337 3.5 7.00004V21C3.5 23.5667 5.6 25.6667 8.16667 25.6667H19.8333C22.4 25.6667 24.5 23.5667 24.5 21V7.00004C24.5 4.43337 22.4 2.33337 19.8333 2.33337ZM12.67 21.1634C12.495 21.3384 12.2733 21.42 12.0517 21.42C11.83 21.42 11.6083 21.3384 11.4333 21.1634L10.675 20.405L9.95167 21.1284C9.77667 21.3034 9.555 21.385 9.33333 21.385C9.11167 21.385 8.89 21.3034 8.715 21.1284C8.37667 20.79 8.37667 20.23 8.715 19.8917L9.43833 19.1684L8.75 18.48C8.41167 18.1417 8.41167 17.5817 8.75 17.2434C9.08833 16.905 9.64833 16.905 9.98667 17.2434L10.675 17.9317L11.3983 17.2084C11.7367 16.87 12.2967 16.87 12.635 17.2084C12.9733 17.5467 12.9733 18.1067 12.635 18.445L11.9117 19.1684L12.67 19.9267C13.0083 20.265 13.0083 20.825 12.67 21.1634ZM16.905 21.5717C16.2633 21.5717 15.7383 21.0584 15.7383 20.4167V20.3934C15.7383 19.7517 16.2633 19.2267 16.905 19.2267C17.5467 19.2267 18.0717 19.7517 18.0717 20.3934C18.0717 21.035 17.5467 21.5717 16.905 21.5717ZM19.2617 19.0517C18.62 19.0517 18.0833 18.5267 18.0833 17.885C18.0833 17.2434 18.5967 16.7184 19.2383 16.7184H19.2617C19.9033 16.7184 20.4283 17.2434 20.4283 17.885C20.4283 18.5267 19.9033 19.0517 19.2617 19.0517ZM21 10.7917C21 11.9117 20.0783 12.8334 18.9583 12.8334H9.04167C7.92167 12.8334 7 11.9117 7 10.7917V7.87504C7 6.75504 7.92167 5.83337 9.04167 5.83337H18.9583C20.0783 5.83337 21 6.75504 21 7.87504V10.7917Z"
+                          fill="#F5F5F5" />
+                      </svg>
+                      My Events</a></li>
+                  <li><a class="active" href="downloads.html"><svg width="28" height="28" viewBox="0 0 28 28"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.8883 2.33337H9.11165C4.86498 2.33337 2.33331 4.86504 2.33331 9.11171V18.8767C2.33331 23.135 4.86498 25.6667 9.11165 25.6667H18.8766C23.1233 25.6667 25.655 23.135 25.655 18.8884V9.11171C25.6666 4.86504 23.135 2.33337 18.8883 2.33337ZM9.88165 12.81C10.22 12.4717 10.78 12.4717 11.1183 12.81L13.125 14.8167V7.59504C13.125 7.11671 13.5216 6.72004 14 6.72004C14.4783 6.72004 14.875 7.11671 14.875 7.59504V14.8167L16.8816 12.81C17.22 12.4717 17.78 12.4717 18.1183 12.81C18.4566 13.1484 18.4566 13.7084 18.1183 14.0467L14.6183 17.5467C14.5366 17.6284 14.4433 17.6867 14.3383 17.7334C14.2333 17.78 14.1166 17.8034 14 17.8034C13.8833 17.8034 13.7783 17.78 13.6616 17.7334C13.5566 17.6867 13.4633 17.6284 13.3816 17.5467L9.88165 14.0467C9.54331 13.7084 9.54331 13.16 9.88165 12.81ZM21.28 20.09C18.935 20.8717 16.4733 21.2684 14 21.2684C11.5266 21.2684 9.06498 20.8717 6.71998 20.09C6.26498 19.9384 6.01998 19.4367 6.17165 18.9817C6.32331 18.5267 6.81331 18.27 7.27998 18.4334C11.62 19.88 16.3916 19.88 20.7316 18.4334C21.1866 18.2817 21.6883 18.5267 21.84 18.9817C21.98 19.4484 21.735 19.9384 21.28 20.09Z"
+                          fill="#F5F5F5" />
+                      </svg>
+                      Downloads</a></li>
+                  <li><a href="#">
+                      <i class="fas fa-user"></i> My Accounts
+                    </a></li>
+                </ul>
+              </nav>
+              <a href="#" class="btn transparent logout-btn"><i class="fas fa-sign-out"></i>Logout</a>
+            </div>
+            <div class="content-body  default my-account">
+              <h2 class="gloabal-heading medium">My Account</h2>
+              <form action="" class="uploader">
+                <div class="user-image">
+                  <img class="user-image" class="me-3" src="./images/placeholder-image.png" alt="placeholder" />
                 </div>
-              </div>
-            </form>
-
-            <div class="personal-detail-form mt-5 mb-5">
-              <form action="">
-                <div class="row mb-4">
-                  <div class="col-5">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" />
-                  </div>
-                  <div class="col-5">
-                    <label for="name">Email</label>
-                    <input type="email" class="form-control" />
-                  </div>
-                </div>
-                <div class="row mb-4">
-                  <div class="col-5">
-                    <label for="name">Phone Number</label>
-                    <input type="number" class="form-control" />
-                  </div>
-                  <div class="col-5">
-                    <label for="name">Interest</label>
-                    <input type="text" class="form-control" />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-auto">
-                    <button class="btn btn-active">Update</button>
-                  </div>
-                  <div class="col-auto align-items-center d-flex">
-                    <a href="#" class="blue">Change Password</a>
+                <div class="form-group">
+                  <p>Profile Picture</p>
+                  <div class="d-flex align-items-center flex-nowrap">
+                    <div class="inputFile pe-2">
+                      <div class="form-control">Upload Image</div>
+                      <input type="file" />
+                    </div>
+                    <a href="#" class="danger">Delete</a>
                   </div>
                 </div>
               </form>
-            </div>
 
-            <div class="tournament-table">
-              <h2 class="gloabal-heading medium">Tournaments</h2>
-              <table>
-                <thead>
-                  <tr>
-                    <th>S.no.</th>
-                    <th>Player Name</th>
-                    <th>My Rank</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="tab-cell">01</div>
-                    </td>
-                    <td>
-                      <div class="tab-cell">Test Event</div>
-                    </td>
-                    <td>
-                      <div class="tab-cell"><a href="#">423</a></div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="tab-cell">02</div>
-                    </td>
-                    <td>
-                      <div class="tab-cell">Test Event</div>
-                    </td>
-                    <td>
-                      <div class="tab-cell"><a href="#">423</a></div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="tab-cell">03</div>
-                    </td>
-                    <td>
-                      <div class="tab-cell">Test Event</div>
-                    </td>
-                    <td>
-                      <div class="tab-cell"><a href="#">423</a></div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="tab-cell">04</div>
-                    </td>
-                    <td>
-                      <div class="tab-cell">Test Event</div>
-                    </td>
-                    <td>
-                      <div class="tab-cell"><a href="#">423</a></div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="tab-cell">05</div>
-                    </td>
-                    <td>
-                      <div class="tab-cell">Test Event</div>
-                    </td>
-                    <td>
-                      <div class="tab-cell"><a href="#">423</a></div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="personal-detail-form mt-5 mb-5">
+                <form action="">
+                  <div class="row mb-4">
+                    <div class="col-5">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="col-5">
+                      <label for="name">Email</label>
+                      <input type="email" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col-5">
+                      <label for="name">Phone Number</label>
+                      <input type="number" class="form-control" />
+                    </div>
+                    <div class="col-5">
+                      <label for="name">Interest</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-auto">
+                      <button class="btn btn-active">Update</button>
+                    </div>
+                    <div class="col-auto align-items-center d-flex">
+                      <a href="#" class="blue">Change Password</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="tournament-table">
+                <h2 class="gloabal-heading medium">Tournaments</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>S.no.</th>
+                      <th>Player Name</th>
+                      <th>My Rank</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="tab-cell">01</div>
+                      </td>
+                      <td>
+                        <div class="tab-cell">Test Event</div>
+                      </td>
+                      <td>
+                        <div class="tab-cell"><a href="#">423</a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="tab-cell">02</div>
+                      </td>
+                      <td>
+                        <div class="tab-cell">Test Event</div>
+                      </td>
+                      <td>
+                        <div class="tab-cell"><a href="#">423</a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="tab-cell">03</div>
+                      </td>
+                      <td>
+                        <div class="tab-cell">Test Event</div>
+                      </td>
+                      <td>
+                        <div class="tab-cell"><a href="#">423</a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="tab-cell">04</div>
+                      </td>
+                      <td>
+                        <div class="tab-cell">Test Event</div>
+                      </td>
+                      <td>
+                        <div class="tab-cell"><a href="#">423</a></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="tab-cell">05</div>
+                      </td>
+                      <td>
+                        <div class="tab-cell">Test Event</div>
+                      </td>
+                      <td>
+                        <div class="tab-cell"><a href="#">423</a></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>

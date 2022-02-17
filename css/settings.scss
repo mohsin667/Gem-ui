@@ -3,6 +3,7 @@ body {
   font-size: 14px;
   font-family: "Oxanium";
   background-color: #e5e5e5;
+  color: #171616;
   @include transition;
   .bg {
     position: absolute;
@@ -46,14 +47,35 @@ p {
   margin-bottom: 10px;
 }
 
+.navbar-brand {
+  .form-switch {
+    margin-left: auto;
+    margin-right: 20px;
+    display: block;
+    @include media($lg) {
+      display: none;
+    }
+  }
+}
+.form-switch {
+  display: none;
+  @include media($lg) {
+    display: block;
+  }
+}
+
+.fa-angle-down {
+  padding-top: 5px;
+}
+
 .container-fluid {
-  max-width: 1400px;
+  // max-width: 1400px;
   @include media($xl) {
     padding: 0 30px;
   }
   &.full-width {
     max-width: 100%;
-    padding: 0 12px;
+    padding: 0 24px;
   }
 }
 
@@ -225,6 +247,17 @@ li {
   }
 }
 
+.form-select {
+  background-image: url("../images/dropdown.svg");
+  color: $grey-text;
+  border-color: rgba(23, 22, 22, 0.2);
+  padding: 8px 40px 8px 8px;
+  background-repeat: no-repeat;
+  font-weight: 500;
+  &:focus {
+    box-shadow: none;
+  }
+}
 .th-dark-blue {
   .form-check-input {
     border: 1px solid #242424;
@@ -245,7 +278,6 @@ li {
     background-image: url("../images/dropdown.svg");
     color: #f5f5f5;
     border-color: #242424;
-    padding: 8px 40px 8px 8px;
     background-repeat: no-repeat;
     &:focus {
       box-shadow: none;
@@ -280,15 +312,28 @@ table {
     }
   }
 }
+.ui-datepicker {
+  background-color: $sharp-white;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  background-color: #fff;
+}
+.ui-datepicker-prev {
+  background-image: url("../images/icons/left-arrow-dark.svg") !important;
+}
+.ui-datepicker-next {
+  background-image: url("../images/icons/right-arrow-dark.svg") !important;
+}
 .th-dark-blue {
   .ui-datepicker {
     background-color: $light-dark;
     border: 1px solid $dark-grey;
     .ui-datepicker-prev {
-      background-image: url("../images/icons/left-arrow.svg");
+      background-image: url("../images/icons/left-arrow.svg") !important;
     }
     .ui-datepicker-next {
-      background-image: url("../images/icons/right-arrow.svg");
+      background-image: url("../images/icons/right-arrow.svg") !important;
     }
     .ui-datepicker-prev,
     .ui-datepicker-next {
@@ -309,6 +354,7 @@ table {
         a {
           border: 2px solid $light-dark;
           background-color: $dark-grey;
+          color: #f5f5f5;
         }
       }
     }
@@ -378,10 +424,10 @@ table {
       a {
         display: block;
         padding: 8.3px 10px;
-        border: 2px solid $light-dark;
-        background-color: $dark-grey;
+        border: 2px solid $sharp-white;
+        background-color: #fff;
+        color: #000;
         border-radius: 5px;
-        color: #f5f5f5;
       }
     }
   }
@@ -401,8 +447,10 @@ label {
 }
 
 .th-dark-blue {
-  .conf,
   .popup-body {
+    background-color: #000;
+  }
+  .popup.deactivate .conf {
     background-color: #000;
   }
 }
@@ -438,7 +486,7 @@ label {
       border-radius: 8px;
       position: relative;
       z-index: 99;
-
+      background-color: #fff;
       i {
         font-size: 30px;
         color: $th-blue;
@@ -567,6 +615,28 @@ label {
       }
     }
   }
+  &.video-popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .popup-layer {
+      position: relative;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      max-width: calc(100% - 30px);
+      iframe {
+        max-width: 100%;
+        max-height: 250px;
+        @include media($md) {
+          max-height: 100%;
+        }
+      }
+    }
+  }
 }
 
 .gold {
@@ -583,7 +653,21 @@ label {
     cursor: pointer;
     width: 40px;
     height: 20px;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2386b7fe'/%3e%3c/svg%3e");
+    background-image: url("../images/icons/moon.svg");
+    background-size: 15px;
+    background-position: 2px;
+    background-color: #3457d1;
+    &:focus {
+      background-image: url("../images/icons/moon.svg");
+    }
+    &:checked {
+      background-position: 23px;
+      background-size: 12px;
+      background-image: url("../images/icons/sun.svg");
+      &:focus {
+        background-image: url("../images/icons/sun.svg");
+      }
+    }
   }
 }
 
