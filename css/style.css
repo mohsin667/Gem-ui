@@ -53,6 +53,10 @@ p {
     .form-switch {
       display: block; } }
 
+.full-height {
+  height: 100% !important;
+  max-height: 100% !important; }
+
 .fa-angle-down {
   padding-top: 5px; }
 
@@ -1163,6 +1167,8 @@ label {
 .filter-form {
   margin-left: -16px; }
 
+.th-dark-blue .event-list .event .event-actions .copy-event {
+  border-right: 1px solid rgba(121, 126, 129, 0.3); }
 .th-dark-blue .event-list .event {
   background-color: #171a1e; }
   .th-dark-blue .event-list .event .round h3,
@@ -1196,20 +1202,22 @@ label {
     .event-list .event .round h3,
     .event-list .event .round h2 {
       color: #3457d1; }
-    .event-list .event .copy-event {
-      font-size: 14px;
-      color: #3457d1;
-      cursor: pointer;
-      width: 100%;
-      padding-left: 50%;
-      padding-top: 10px; }
-      @media screen and (min-width: 992px) {
-        .event-list .event .copy-event {
-          padding-top: 0;
-          padding-left: 0;
-          width: auto;
-          right: 15px;
-          position: absolute; } }
+    .event-list .event .event-actions {
+      margin-left: auto;
+      display: flex;
+      align-items: flex-start;
+      color: #3457d1; }
+      .event-list .event .event-actions .copy-event {
+        font-size: 14px;
+        cursor: pointer;
+        width: 100%;
+        border-right: 1px solid rgba(121, 126, 129, 0.3);
+        margin-top: 2px;
+        padding-right: 8px;
+        margin-right: 14px; }
+      .event-list .event .event-actions span {
+        padding-top: 5px;
+        cursor: pointer; }
     .event-list .event .round {
       padding: 20px 40px;
       min-width: 130px;
@@ -1337,34 +1345,33 @@ label {
 .popup-form {
   height: 100%;
   display: flex;
-  flex-flow: column;
-  justify-content: space-between; }
+  flex-flow: column; }
   .popup-form h2 {
     margin-bottom: 20px;
     height: 40px; }
   .popup-form .btn.big {
     margin: 0 auto; }
 
-.add-event-popup .form-steps {
+.popup-form .form-steps {
   width: 100%;
   overflow: hidden;
   display: flex;
   flex-flow: nowrap; }
-  .add-event-popup .form-steps .form-element {
+  .popup-form .form-steps .form-element {
     min-width: 100%;
     position: relative;
     padding: 5px; }
-.add-event-popup .steps {
+.popup-form .steps {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px; }
-  .add-event-popup .steps span {
+  .popup-form .steps span {
     color: #3457d1; }
-.add-event-popup .btn.big {
+.popup-form .btn.big {
   margin-top: 10px; }
   @media screen and (min-width: 992px) {
-    .add-event-popup .btn.big {
+    .popup-form .btn.big {
       margin-top: 50px; } }
 
 .form-element {

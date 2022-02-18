@@ -3,6 +3,9 @@
 }
 
 .th-dark-blue {
+  .event-list .event .event-actions .copy-event {
+    border-right: 1px solid rgba(121, 126, 129, 0.3);
+  }
   .event-list {
     .event {
       background-color: $light-dark;
@@ -49,19 +52,24 @@
     .round h2 {
       color: $th-blue;
     }
-    .copy-event {
-      font-size: 14px;
+    .event-actions {
+      margin-left: auto;
+      display: flex;
+      // flex-flow: column;
+      align-items: flex-start;
       color: $th-blue;
-      cursor: pointer;
-      width: 100%;
-      padding-left: 50%;
-      padding-top: 10px;
-      @include media($lg) {
-        padding-top: 0;
-        padding-left: 0;
-        width: auto;
-        right: 15px;
-        position: absolute;
+      .copy-event {
+        font-size: 14px;
+        cursor: pointer;
+        width: 100%;
+        border-right: 1px solid rgba(121, 126, 129, 0.3);
+        margin-top: 2px;
+        padding-right: 8px;
+        margin-right: 14px;
+      }
+      span {
+        padding-top: 5px;
+        cursor: pointer;
       }
     }
     .round {
@@ -231,7 +239,6 @@
   height: 100%;
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
   h2 {
     margin-bottom: 20px;
     height: 40px;
@@ -241,7 +248,7 @@
   }
 }
 
-.add-event-popup {
+.popup-form {
   .form-steps {
     width: 100%;
     overflow: hidden;

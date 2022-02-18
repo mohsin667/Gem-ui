@@ -120,7 +120,9 @@
                     <p>Add or manage your store location below.<br class="d-none d-lg-inline" />
                       Deactivated stores will not show up in store locator apps</p>
                   </div>
-                  <div class="col-4 d-flex justify-content-end"><a href="#" class="btn btn-active mini">Add Location</a>
+                  <div class="col-4 d-flex justify-content-end"><a href="#"
+                      class="eventPopup btn btn-active mini eventPopup">Add
+                      Location</a>
                   </div>
                 </div>
               </div>
@@ -135,7 +137,7 @@
                         <p>86092 Fisher Causeway, Romanfort,
                           Bilzen, 95418, USA</p>
                         <div class="btn-row d-flex align-items-center justify-content-between">
-                          <a href="#" class="btn btn-active mini">Edit</a>
+                          <a href="#" class="eventPopup btn btn-active mini">Edit</a>
                           <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
                         </div>
                       </div>
@@ -147,7 +149,7 @@
                         <p>86092 Fisher Causeway, Romanfort,
                           Bilzen, 95418, USA</p>
                         <div class="btn-row d-flex align-items-center justify-content-between">
-                          <a href="#" class="btn btn-active mini">Edit</a>
+                          <a href="#" class="eventPopup btn btn-active mini">Edit</a>
                           <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
                         </div>
                       </div>
@@ -159,7 +161,7 @@
                         <p>86092 Fisher Causeway, Romanfort,
                           Bilzen, 95418, USA</p>
                         <div class="btn-row d-flex align-items-center justify-content-between">
-                          <a href="#" class="btn btn-active mini">Edit</a>
+                          <a href="#" class="eventPopup btn btn-active mini">Edit</a>
                           <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
                         </div>
                       </div>
@@ -171,7 +173,7 @@
                         <p>86092 Fisher Causeway, Romanfort,
                           Bilzen, 95418, USA</p>
                         <div class="btn-row d-flex align-items-center justify-content-between">
-                          <a href="#" class="btn btn-active mini">Edit</a>
+                          <a href="#" class="eventPopup btn btn-active mini">Edit</a>
                           <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
                         </div>
                       </div>
@@ -183,7 +185,7 @@
                         <p>86092 Fisher Causeway, Romanfort,
                           Bilzen, 95418, USA</p>
                         <div class="btn-row d-flex align-items-center justify-content-between">
-                          <a href="#" class="btn btn-active mini">Edit</a>
+                          <a href="#" class="eventPopup btn btn-active mini">Edit</a>
                           <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
                         </div>
                       </div>
@@ -195,7 +197,7 @@
                         <p>86092 Fisher Causeway, Romanfort,
                           Bilzen, 95418, USA</p>
                         <div class="btn-row d-flex align-items-center justify-content-between">
-                          <a href="#" class="btn btn-active mini">Edit</a>
+                          <a href="#" class="eventPopup btn btn-active mini">Edit</a>
                           <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
                         </div>
                       </div>
@@ -207,7 +209,7 @@
                         <p>86092 Fisher Causeway, Romanfort,
                           Bilzen, 95418, USA</p>
                         <div class="btn-row d-flex align-items-center justify-content-between">
-                          <a href="#" class="btn btn-active mini">Edit</a>
+                          <a href="#" class="eventPopup btn btn-active mini">Edit</a>
                           <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
                         </div>
                       </div>
@@ -219,7 +221,7 @@
                         <p>86092 Fisher Causeway, Romanfort,
                           Bilzen, 95418, USA</p>
                         <div class="btn-row d-flex align-items-center justify-content-between">
-                          <a href="#" class="btn btn-active mini">Edit</a>
+                          <a href="#" class="eventPopup btn btn-active mini">Edit</a>
                           <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
                         </div>
                       </div>
@@ -231,7 +233,7 @@
                         <p>86092 Fisher Causeway, Romanfort,
                           Bilzen, 95418, USA</p>
                         <div class="btn-row d-flex align-items-center justify-content-between">
-                          <a href="#" class="btn btn-active mini">Edit</a>
+                          <a href="#" class="eventPopup btn btn-active mini">Edit</a>
                           <a href="#" class="m-0 danger bold d-location">Deactivate Location</a>
                         </div>
                       </div>
@@ -244,19 +246,45 @@
         </div>
       </div>
     </div>
-    <div class="popup deactivate">
-      <div class="layer"></div>
-      <div class="conf text-center">
-        <i class="fas fa-exclamation-circle"></i>
-        <h2 class="gloabal-heading medium">Are you sure ?</h2>
-        <p>Are you sure you want to deactivate the location?</p>
-        <div class="btn-row">
-          <a href="#" class="btn btn-active mx-1">Yes</a>
-          <a href="#" class="btn btn-active mx-1 btn-danger d-close">No</a>
+  </main>
+  <div class="popup">
+  </div>
+
+  <div class="side-popup popup-form ">
+    <h2 class="gloabal-heading small d-flex align-items-center justify-content-between">Add Location <i
+        class="close-popup fal fa-times"></i></h2>
+    <div class="overflow">
+      <form action="" class="popup-form full-height">
+
+        <div class="form-steps">
+          <div class="form-element">
+            <div class="form-body">
+              <div class="form-group">
+                <label for="location-name">Location Name</label>
+                <input type="text" id="location-name" class="form-control" placeholder="Enter Event Name" />
+              </div>
+            </div>
+
+            <div class="btn-row">
+              <button class="btn btn-active big">Add Location</button>
+            </div>
+          </div>
         </div>
+      </form>
+    </div>
+  </div>
+  <div class="popup deactivate">
+    <div class="layer"></div>
+    <div class="conf text-center">
+      <i class="fas fa-exclamation-circle"></i>
+      <h2 class="gloabal-heading medium">Are you sure ?</h2>
+      <p>Are you sure you want to deactivate the location?</p>
+      <div class="btn-row">
+        <a href="#" class="btn btn-active mx-1">Yes</a>
+        <a href="#" class="btn btn-active mx-1 btn-danger d-close">No</a>
       </div>
     </div>
-  </main>
+  </div>
   <script src="./js/jquery.js"></script>
   <script src="./js/jquery-ui.min.js"></script>
   <script src="./js/jquery.nicescroll.min.js"></script>

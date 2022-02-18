@@ -2,8 +2,8 @@ $(document).ready(() => {
   const addEvent = document.querySelectorAll(".copy-event");
   const popup = document.querySelector(".popup");
   const closePopup = document.querySelectorAll(".close-popup");
-  const addEventButton = document.querySelector("#addEvent");
-  const addEventPopup = document.querySelector(".add-event-popup");
+  const addEventButton = document.querySelector(".eventPopup");
+  const addEventPopup = document.querySelector(".popup-form");
   const nextEvent = document.querySelector("#nextEvent");
   const back = document.querySelector("#back");
   const form1 = document.querySelector(".form-1");
@@ -30,28 +30,24 @@ $(document).ready(() => {
 
   closePopup.forEach(elm => {
     elm.addEventListener("click", function () {
-      const eventPopup = document.querySelector(".event-popup");
       const popup = document.querySelector(".popup");
+      popup.classList.remove("in");
+      $(".event-popup").removeClass("in");
+      addEventPopup.classList.remove("in");
+    });
+  });
+
+  $(".eventPopup").on("click", function () {
+    addEventPopup.classList.add("in");
+    popup.classList.add("in");
+    const closeControl = document.querySelector(".popup.in");
+    const eventPopup = document.querySelector(".popup-form");
+    closeControl.addEventListener("click", function () {
       popup.classList.remove("in");
       eventPopup.classList.remove("in");
       addEventPopup.classList.remove("in");
     });
   });
-
-  if (addEventButton) {
-    addEventButton.addEventListener("click", function () {
-      addEventPopup.classList.add("in");
-      popup.classList.add("in");
-      const closeControl = document.querySelector(".popup.in");
-      const eventPopup = document.querySelector(".add-event-popup");
-
-      closeControl.addEventListener("click", function () {
-        popup.classList.remove("in");
-        eventPopup.classList.remove("in");
-        addEventPopup.classList.remove("in");
-      });
-    });
-  }
 
   if (nextEvent) {
     nextEvent.addEventListener("click", function () {
@@ -97,7 +93,7 @@ $(document).ready(() => {
     }
   });
   $(".d-location").on("click", function () {
-    $(".popup").addClass("in");
+    $(".deactivate").addClass("in");
     if ($(".video-popup iframe")) {
       $(".video-popup iframe").attr("src", "");
     }
